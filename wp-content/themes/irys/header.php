@@ -14,7 +14,7 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header id="header">
+        <header id="header" class="header">
         <!-- Tout le contenu de l entête de mon site -->
         
         <?php 
