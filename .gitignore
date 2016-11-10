@@ -1,5 +1,8 @@
 # logs files
 *.log
+/*
+!wp-content/themes/irys
+!wp-content/plugins/
 
 # Hidden files
 .DS_Store
