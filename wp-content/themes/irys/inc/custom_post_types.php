@@ -1,6 +1,6 @@
 <?php
-add_action('init', 'create_custom_post_type_slides');
-function create_custom_post_type_slides(){
+add_action('init', 'create_custom_post_type_formulaires');
+function create_custom_post_type_formulaires(){
 
     $labels = array(
         'name'               => 'Formulaires de contact',
