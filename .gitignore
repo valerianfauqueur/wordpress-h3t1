@@ -1,6 +1,6 @@
 # logs files
 *.log
-/*
+
 !wp-content/themes/irys
 !wp-content/plugins/
 
