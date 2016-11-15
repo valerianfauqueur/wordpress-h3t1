@@ -62,7 +62,7 @@ body {
         content: "";
         display: block; } }
 
-h3 {
+h3, h4 {
   margin-bottom: 0.6em; }
 
 p, li {
@@ -74,22 +74,22 @@ p, li {
 li {
   list-style-position: inside; }
 
-.btn, article.who .who__btn, article.actions .actions__btn, article.goals .goals__btn, .form .form__btn, article.support .support__btn {
+.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .support .support__btn, .envies .envies__btn, .travel .travel__btn {
   margin-bottom: 2.5em;
   display: inline-block;
   border: 2px solid #1840d1;
   border-radius: 4px;
   transition: background-color 0.24s ease-out; }
-  .btn a, article.who .who__btn a, article.actions .actions__btn a, article.goals .goals__btn a, .form .form__btn a, article.support .support__btn a {
+  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a {
     display: inline-block;
     padding: 0.6em 1em;
     color: #1840d1;
     font-size: 18px;
     transition: color 0.24s ease-out;
     cursor: pointer; }
-  .btn:hover, article.who .who__btn:hover, article.actions .actions__btn:hover, article.goals .goals__btn:hover, .form .form__btn:hover, article.support .support__btn:hover, .btn:focus, article.who .who__btn:focus, article.actions .actions__btn:focus, article.goals .goals__btn:focus, .form .form__btn:focus, article.support .support__btn:focus {
+  .btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus {
     background-color: #1840d1; }
-    .btn:hover a, article.who .who__btn:hover a, article.actions .actions__btn:hover a, article.goals .goals__btn:hover a, .form .form__btn:hover a, article.support .support__btn:hover a, .btn:focus a, article.who .who__btn:focus a, article.actions .actions__btn:focus a, article.goals .goals__btn:focus a, .form .form__btn:focus a, article.support .support__btn:focus a {
+    .btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a {
       color: #ffffff; }
 
 nav {
@@ -157,85 +157,102 @@ header {
     @media screen and (min-width: 600px) {
       header h2 {
         font-size: 28px; } }
+  header.actions {
+    width: 100%;
+    text-align: center; }
+    header.actions .header__titles {
+      position: relative;
+      transform: translateY(100px);
+      z-index: 5; }
+      @media screen and (min-width: 650px) {
+        header.actions .header__titles {
+          transform: translateY(150px); } }
+    header.actions h1 {
+      font-size: 36px;
+      margin-bottom: 0; }
+      @media screen and (min-width: 650px) {
+        header.actions h1 {
+          font-size: 42px;
+          letter-spacing: 0.1em; } }
 
 section {
   margin-bottom: 50px; }
 
-article.who {
+.who {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 42px; }
-  article.who:last-child {
+  .who:last-child {
     margin-right: 0; }
   @media screen and (min-width: 1080px) {
-    article.who {
+    .who {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       padding-right: 10px;
       border-right: 2px solid #cfcfcf; }
-      article.who:last-child {
+      .who:last-child {
         margin-right: 0; } }
-  article.who .who__title {
+  .who .who__title {
     font-family: "osLight";
     font-size: 30px; }
 
-article.actions {
+.actions {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 42px; }
-  article.actions:last-child {
+  .actions:last-child {
     margin-right: 0; }
   @media screen and (min-width: 1080px) {
-    article.actions {
+    .actions {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       text-align: right; }
-      article.actions:last-child {
+      .actions:last-child {
         margin-right: 0; } }
-  article.actions .actions__title {
+  .actions .actions__title {
     font-family: "osLight";
     font-size: 30px; }
 
-article.goals {
+.goals {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 42px; }
-  article.goals:last-child {
+  .goals:last-child {
     margin-right: 0; }
   @media screen and (min-width: 1080px) {
-    article.goals {
+    .goals {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
-      article.goals:last-child {
+      .goals:last-child {
         margin-right: 0; } }
-  article.goals .goals__title {
+  .goals .goals__title {
     font-family: "osLight";
     font-size: 30px; }
 
-article.programm {
+.programm {
   margin: 0 auto;
   margin-bottom: 42px; }
   @media screen and (min-width: 1080px) {
-    article.programm {
+    .programm {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
-      article.programm:last-child {
+      .programm:last-child {
         margin-right: 0; } }
-  article.programm .programm__item {
+  .programm .programm__item {
     display: inline-block;
     margin: 0;
     height: 200px;
@@ -244,9 +261,9 @@ article.programm {
     background-color: #1840d1;
     border: 2px solid #ffffff; }
     @media screen and (min-width: 1080px) {
-      article.programm .programm__item {
+      .programm .programm__item {
         width: 33%; } }
-    article.programm .programm__item p, article.programm .programm__item li {
+    .programm .programm__item p, .programm .programm__item li {
       color: #ffffff;
       font-family: "osBold";
       line-height: 200px;
@@ -255,7 +272,7 @@ article.programm {
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      article.programm .programm__item p:last-child, article.programm .programm__item li:last-child {
+      .programm .programm__item p:last-child, .programm .programm__item li:last-child {
         margin-right: 0; }
 
 .form {
@@ -294,48 +311,187 @@ article.programm {
     .form .form__btn a {
       color: #ffffff; }
 
-article.processus {
+.processus {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 42px; }
-  article.processus:last-child {
+  .processus:last-child {
     margin-right: 0; }
   @media screen and (min-width: 1080px) {
-    article.processus {
+    .processus {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       padding-right: 10px;
       border-right: 2px solid #cfcfcf; }
-      article.processus:last-child {
+      .processus:last-child {
         margin-right: 0; } }
-  article.processus .processus__title {
+  .processus .processus__title {
     font-family: "osLight";
     font-size: 30px; }
 
-article.support {
+.support {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-bottom: 42px; }
-  article.support:last-child {
+  .support:last-child {
     margin-right: 0; }
   @media screen and (min-width: 1080px) {
-    article.support {
+    .support {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
       text-align: right; }
-      article.support:last-child {
+      .support:last-child {
         margin-right: 0; } }
-  article.support .support__title {
+  .support .support__title {
     font-family: "osLight";
     font-size: 30px; }
+
+.region {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .region:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .region:last-child {
+        margin-right: 0; } }
+  .region .region__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.events {
+  clear: both;
+  margin-bottom: 42px; }
+
+.event {
+  margin-bottom: 30px;
+  clear: both;
+  background-color: #efefef; }
+  .event .event__img {
+    height: 250px;
+    background-color: #303030; }
+    @media screen and (min-width: 1080px) {
+      .event .event__img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .event .event__img:last-child {
+          margin-right: 0; } }
+  .event .event__infos {
+    padding: 15px;
+    text-align: right; }
+    @media screen and (min-width: 1080px) {
+      .event .event__infos {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .event .event__infos:last-child {
+          margin-right: 0; } }
+  .event .event__title {
+    font-family: "osLight";
+    font-size: 30px; }
+  .event .social a {
+    padding: 0 10px; }
+
+.nextEvents {
+  margin: 0 42px;
+  text-align: center;
+  clear: both; }
+
+.nextEvent {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 1080px) {
+    .nextEvent {
+      display: inline-block;
+      padding: 10px;
+      width: 15%;
+      text-align: center;
+      border: 1px solid #333333; } }
+  .nextEvent p.nextEvent__date, .nextEvent li.nextEvent__date {
+    font-family: "osBold"; }
+
+.usine {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .usine:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .usine {
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; } }
+  .usine .usine__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.envies {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px;
+  text-align: center; }
+  .envies:last-child {
+    margin-right: 0; }
+  .envies .envies__title {
+    font-family: "osLight";
+    font-size: 30px;
+    text-align: center; }
+  .envies .envies__txt {
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .envies .envies__txt {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px; } }
+
+.travel {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .travel:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .travel {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      .travel:last-child {
+        margin-right: 0; } }
+  .travel .travel__title {
+    font-family: "osLight";
+    font-size: 30px; }
+  .travel .travel__txt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .travel .travel__txt {
+        width: 400px; } }
 
 footer .social, footer .legal {
   text-align: center; }
