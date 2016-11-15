@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // ------------------ ANNONCES ----------------------
 add_action('init', 'programme_post_type');
@@ -60,7 +60,7 @@ function bio_post_type(){
     $args = array(
         'labels'              => $labels,
         'hierarchical'        => false,
-        'supports'            => array( 'title','editor', 'excerpt'),
+        'supports'            => array( 'title','editor', 'excerpt', 'thumbnail'),
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
