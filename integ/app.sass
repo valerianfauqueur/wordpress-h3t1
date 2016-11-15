@@ -28,6 +28,7 @@ body
   padding-bottom: 80px
   font-size: 0px
   font-family: $fontRegular, Helvetica, sans-serif
+  overflow-x: hidden
 
 .container
   +outer-container(100%)
@@ -110,7 +111,6 @@ a
 header
   position: relative
   margin-bottom: 30px
-  height: 400px
 
   color: #ffffff
   text-align: center
@@ -133,13 +133,9 @@ header
       background-color: rgba($brandPrimary, 0.4)
 
   .header__titles
+    padding: 100px 0px
     position: relative
-    transform: translateY(120px)
     z-index: 5
-
-    +adapt(600px)
-      transform: translateY(60px)
-
 
   h1
     margin-bottom: -20px
@@ -163,11 +159,9 @@ header
 
     .header__titles
       position: relative
-      transform: translateY(100px)
       z-index: 5
 
       +adapt(650px)
-        transform: translateY(150px)
 
     h1
       font-size: 36px
@@ -177,12 +171,9 @@ header
         font-size: 42px
         letter-spacing: 0.1em
 
-  &.programme
-    .header__titles
-      transform: translateY(150px)
-
 section
   margin-bottom: 50px
+  overflow: hidden
 
 // LANDING
 .who
@@ -448,9 +439,10 @@ section
 
 // PROGRAMME
 .programmeArticle
-  padding: 30px
+  padding: 30px 0
   +span-columns(12)
-  margin-bottom: 42px
+  margin-bottom: 100px
+  position: relative
 
   +adapt(1080px)
     +span-columns(12)
@@ -458,7 +450,7 @@ section
   .title__container
     position: relative
 
-  .programme__title
+  .programmeArticle__title
     font-family: $fontLight
     font-size: 30px
     text-align: center
@@ -481,12 +473,36 @@ section
       left: -5px
       font-size: 150px
 
-  .programme__txt
+  .programmeArticle__txt
     margin-bottom: 2em
     +adapt(1080px)
 
   &:nth-child(even)
+    padding: 30px 0 80px 0
     background-color: #ececec
+
+    +adapt(1080px)
+      .number
+        left: calc(100% - 5px)
+
+      .programmeArticle__title
+        text-align: right
+
+      .programmeArticle__txt
+        text-align: right
+
+    &::after
+      content: ""
+      position: absolute
+      top: -100px
+      z-index: -5
+      left: -100px
+      right: -100px
+      height: 300px
+      background-color: #ececec
+
+      transform-origin: 50% 0%
+      transform: rotate(-5deg)
 
 footer
   .social, .legal
