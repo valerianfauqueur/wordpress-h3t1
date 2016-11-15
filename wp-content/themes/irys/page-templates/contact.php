@@ -1,5 +1,8 @@
-
-<?php /* Template Name: Contact */ ?>
+<?php
+/**
+ * Template Name: Contact
+ */
+?>
 
 <?php get_header(); //appel du template header.php  ?>
 
