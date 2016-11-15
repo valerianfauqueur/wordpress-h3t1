@@ -44,7 +44,7 @@ add_action('init', 'bio_post_type');
 function bio_post_type(){
     $labels = array(
         'name'               => 'Biographie',
-        'singular_name'      => 'Bio part',
+        'singular_name'      => 'Biographie',
         'all_items'          => 'Toutes les parties',
         'add_new'            => 'Ajouter une partie',
         'add_new_item'       => 'Ajouter une partie',
