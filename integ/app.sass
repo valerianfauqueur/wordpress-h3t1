@@ -1,3 +1,14 @@
+$brandPrimary : #1840D1
+
+$fontRegular: 'osRegular'
+$fontLight: 'osLight'
+$fontBold: 'osBold'
+$fontIalic: 'osItalic'
+
+@import "bourbon/bourbon"
+@import "neat/neat"
+@import "_fonts.sass"
+
 *, *::before, *::after
   box-sizing: border-box
   margin: 0
@@ -5,7 +16,41 @@
 
 body
   font-size: 16px
-  font-family: Helvetica, sans-serif
+  font-family: $fontRegular, Helvetica, sans-serif
 
-@import "bourbon/bourbon"
-@import "neat/neat"
+.container
+  @include outer-container
+
+h1, h2, h3, h4, h5, h6
+  font-family: $fontBold
+
+p
+  line-height: 1.6em
+
+nav
+  text-align: center
+  padding: 20px 0
+
+  li
+    display: inline-block
+    padding: 0 1.4em
+
+    font-family: $fontBold
+    text-transform: uppercase
+
+header
+  height: 400px
+
+  color: #ffffff
+  text-align: center
+  text-transform: uppercase
+
+  background-color: $brandPrimary
+
+  h1
+    margin-bottom: -20px
+    font-size: 150px
+    letter-spacing: 0.1em
+
+  h2
+    font-family: $fontLight
