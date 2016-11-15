@@ -161,23 +161,25 @@ header {
     @media screen and (min-width: 600px) {
       header h2 {
         font-size: 28px; } }
-  header.actions {
+  header.actions, header.programme {
     width: 100%;
     text-align: center; }
-    header.actions .header__titles {
+    header.actions .header__titles, header.programme .header__titles {
       position: relative;
       transform: translateY(100px);
       z-index: 5; }
       @media screen and (min-width: 650px) {
-        header.actions .header__titles {
+        header.actions .header__titles, header.programme .header__titles {
           transform: translateY(150px); } }
-    header.actions h1 {
+    header.actions h1, header.programme h1 {
       font-size: 36px;
       margin-bottom: 0; }
       @media screen and (min-width: 650px) {
-        header.actions h1 {
+        header.actions h1, header.programme h1 {
           font-size: 42px;
           letter-spacing: 0.1em; } }
+  header.programme .header__titles {
+    transform: translateY(150px); }
 
 section {
   margin-bottom: 50px; }
@@ -382,36 +384,36 @@ section {
   clear: both;
   margin-bottom: 42px; }
 
-.event {
+.article {
   margin-bottom: 30px;
   clear: both;
   background-color: #efefef; }
-  .event .event__img {
+  .article .article__img {
     height: 250px;
     background-color: #303030; }
     @media screen and (min-width: 1080px) {
-      .event .event__img {
+      .article .article__img {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .event .event__img:last-child {
+        .article .article__img:last-child {
           margin-right: 0; } }
-  .event .event__infos {
+  .article .article__infos {
     padding: 15px;
     text-align: right; }
     @media screen and (min-width: 1080px) {
-      .event .event__infos {
+      .article .article__infos {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .event .event__infos:last-child {
+        .article .article__infos:last-child {
           margin-right: 0; } }
-  .event .event__title {
+  .article .article__title {
     font-family: "osLight";
     font-size: 30px; }
-  .event .social a {
+  .article .social a {
     padding: 0 10px; }
 
 .nextEvents {
@@ -496,6 +498,49 @@ section {
     @media screen and (min-width: 1080px) {
       .travel .travel__txt {
         width: 400px; } }
+
+.programmeArticle {
+  padding: 30px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .programmeArticle:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .programmeArticle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .programmeArticle:last-child {
+        margin-right: 0; } }
+  .programmeArticle .title__container {
+    position: relative; }
+  .programmeArticle .programme__title {
+    font-family: "osLight";
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .programmeArticle .programme__title {
+        text-align: left; } }
+  .programmeArticle .number {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: rgba(24, 64, 209, 0.3);
+    font-family: "osBold";
+    font-size: 56px;
+    transform: translate(-50%, -30%); }
+    @media screen and (min-width: 1080px) {
+      .programmeArticle .number {
+        left: -5px;
+        font-size: 150px; } }
+  .programmeArticle .programme__txt {
+    margin-bottom: 2em; }
+  .programmeArticle:nth-child(even) {
+    background-color: #ececec; }
 
 footer .social, footer .legal {
   text-align: center; }

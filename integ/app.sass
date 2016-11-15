@@ -157,7 +157,7 @@ header
     +adapt(600px)
       font-size: 28px
 
-  &.actions
+  &.actions, &.programme
     width: 100%
     text-align: center
 
@@ -176,6 +176,10 @@ header
       +adapt(650px)
         font-size: 42px
         letter-spacing: 0.1em
+
+  &.programme
+    .header__titles
+      transform: translateY(150px)
 
 section
   margin-bottom: 50px
@@ -346,24 +350,24 @@ section
   clear: both
   margin-bottom: 42px
 
-.event
+.article
   margin-bottom: 30px
   clear: both
   background-color: #efefef
 
-  .event__img
+  .article__img
     +adapt(1080px)
       +span-columns(6)
     height: 250px
     background-color: #303030
 
-  .event__infos
+  .article__infos
     +adapt(1080px)
       +span-columns(6)
     padding: 15px
     text-align: right
 
-  .event__title
+  .article__title
     font-family: $fontLight
     font-size: 30px
 
@@ -441,6 +445,48 @@ section
 
   .travel__btn
     @extend .btn
+
+// PROGRAMME
+.programmeArticle
+  padding: 30px
+  +span-columns(12)
+  margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(12)
+
+  .title__container
+    position: relative
+
+  .programme__title
+    font-family: $fontLight
+    font-size: 30px
+    text-align: center
+
+    +adapt(1080px)
+      text-align: left
+
+  .number
+    position: absolute
+    top: 0
+    left: 50%
+
+    color: rgba($brandPrimary, 0.3)
+    font-family: $fontBold
+    font-size: 56px
+
+    transform: translate(-50%, -30%)
+
+    +adapt(1080px)
+      left: -5px
+      font-size: 150px
+
+  .programme__txt
+    margin-bottom: 2em
+    +adapt(1080px)
+
+  &:nth-child(even)
+    background-color: #ececec
 
 footer
   .social, .legal
