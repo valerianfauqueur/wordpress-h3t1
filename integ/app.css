@@ -96,13 +96,20 @@ nav {
   text-align: center;
   padding: 20px 0; }
   nav li {
-    margin-bottom: 0;
-    display: inline-block;
+    margin-bottom: 2em;
+    display: block;
     font-family: "osBold";
     text-transform: uppercase; }
+    @media screen and (min-width: 600px) {
+      nav li {
+        margin-bottom: 0;
+        display: inline-block; } }
     nav li a {
-      padding: 0 1.4em;
+      padding: 2em 0;
       transition: color 0.24s; }
+      @media screen and (min-width: 600px) {
+        nav li a {
+          padding: 0 1.4em; } }
       nav li a:hover, nav li a:focus {
         color: #1840d1;
         cursor: pointer; }
@@ -131,16 +138,25 @@ header {
         background-color: rgba(24, 64, 209, 0.4); } }
   header .header__titles {
     position: relative;
-    transform: translateY(60px);
+    transform: translateY(120px);
     z-index: 5; }
+    @media screen and (min-width: 600px) {
+      header .header__titles {
+        transform: translateY(60px); } }
   header h1 {
     margin-bottom: -20px;
-    font-size: 150px;
-    font-family: "osBold";
-    letter-spacing: 0.1em; }
+    font-size: 100px;
+    font-family: "osBold"; }
+    @media screen and (min-width: 600px) {
+      header h1 {
+        font-size: 150px;
+        letter-spacing: 0.1em; } }
   header h2 {
     font-family: "osLight";
-    font-size: 28px; }
+    font-size: 20px; }
+    @media screen and (min-width: 600px) {
+      header h2 {
+        font-size: 28px; } }
 
 section {
   margin-bottom: 50px; }
