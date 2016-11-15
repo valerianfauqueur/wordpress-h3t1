@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 Template Name: programme
@@ -13,13 +13,13 @@ get_header(); //appel du template header.php  ?>
             <h1><?php the_title(); ?></h1>
             <h3><?php the_field("sous_titre"); ?></h3>
             <p><?php the_field("description"); ?></p>
-        </div >
+        </div>
 
         <?php if (have_posts()) : while (have_posts()) : the_post();
             the_content();
         endwhile; endif; ?>
 
-        <?php 
+        <?php
             // The Query
             $args = array('post_type' => "programme");
             $the_query = new WP_Query( $args );
@@ -43,7 +43,8 @@ get_header(); //appel du template header.php  ?>
                 // no posts found
             }
         ?>
-        
+
 </section>
 
+<?php get_template_part('additionnal-info'); ?>
 <?php get_footer(); //appel du template header.php  ?>

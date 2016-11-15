@@ -85,4 +85,6 @@
            href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
     </div>
 </section>
+
+<?php get_template_part('additionnal-info'); ?>
 <?php get_footer(); //appel du template header.php  ?>

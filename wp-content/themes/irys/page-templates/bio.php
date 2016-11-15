@@ -57,4 +57,5 @@
     ?>
 </section>
 
+<?php get_template_part('additionnal-info'); ?>
 <?php get_footer(); //appel du template header.php  ?>
