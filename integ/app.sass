@@ -104,16 +104,22 @@ header
   color: #ffffff
   text-align: center
   text-transform: uppercase
-  background-image: url('img/landingBackground.png')
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: bottom
+
+  +adapt(600px)
+    background-image: url('img/landingBackground.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
 
   .header__background
     position: absolute
     height: 100%
     width: 100%
-    background-color: rgba($brandPrimary, 0.4)
+    background-color: $brandPrimary
+    transition: background-color $time
+
+    +adapt(600px)
+      background-color: rgba($brandPrimary, 0.4)
 
   .header__titles
     position: relative

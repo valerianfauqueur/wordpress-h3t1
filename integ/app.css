@@ -113,16 +113,22 @@ header {
   height: 400px;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
-  background-image: url("img/landingBackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom; }
+  text-transform: uppercase; }
+  @media screen and (min-width: 600px) {
+    header {
+      background-image: url("img/landingBackground.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; } }
   header .header__background {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(24, 64, 209, 0.4); }
+    background-color: #1840d1;
+    transition: background-color 0.24s; }
+    @media screen and (min-width: 600px) {
+      header .header__background {
+        background-color: rgba(24, 64, 209, 0.4); } }
   header .header__titles {
     position: relative;
     transform: translateY(60px);
