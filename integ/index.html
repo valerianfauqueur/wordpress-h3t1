@@ -18,8 +18,10 @@
     </nav>
     <header>
       <div class="container">
-        <h1>Irys</h1>
-        <h2>No brain, but trillions of ideas</h2>
+        <div class="titles">
+          <h1>Irys</h1>
+          <h2>No brain, but trillions of ideas</h2>
+        </div>
       </div>
     </header>
     <main>
@@ -30,11 +32,11 @@
             <p class="who__txt">Chaque mois, je rencontre les salariés de différentes entreprises afin de les accompagner et comprendre les problèmes auxquels ils sont confrontés.</p>
             <div class="who__btn"><a>Découvrez qui est IRYS</a></div>
           </article>
-          <articles class="actions">
+          <article class="actions">
             <h3 class="actions__title">IRYS au plus près de ses concitoyens</h3>
             <p class="actions__txt">Chaque mois, je rencontre les salariés de différentes entreprises afin de les accompagner et comprendre les problèmes auxquels ils sont confrontés.</p>
             <div class="actions__btn"><a>Actions récentes d'IRYS</a></div>
-          </articles>
+          </article>
         </div>
       </section>
       <section>
@@ -44,13 +46,25 @@
             <p class="goals__txt">Chaque mois, je rencontre les salariés de différentes entreprises afin de les accompagner et comprendre les problèmes auxquels ils sont confrontés.</p>
             <div class="goals__btn"><a>Accéder au programme</a></div>
           </article>
-          <article class="programme">
-            <div class="programme__item">icon</div>
-            <div class="programme__item">icon</div>
-            <div class="programme__item">icon</div>
-            <div class="programme__item">icon</div>
-            <div class="programme__item">icon</div>
-            <div class="programme__item">icon</div>
+          <article class="programm">
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
+            <div class="programm__item">
+              <p>icon</p>
+            </div>
           </article>
         </div>
       </section>
@@ -58,17 +72,16 @@
         <div class="container">
           <div class="form">
             <form>
-              <h3 class="form__title">Contactez IRYS
-                <fieldset class="form__mail">
-                  <label>Votre adresse-mail</label>
-                  <input type="mail" placeholder="Entrez votre adresse mail">
-                </fieldset>
-                <fieldset class="form__message">
-                  <label>Votre message</label>
-                  <textarea type="txt" placeholder="Votre message"></textarea>
-                </fieldset>
-                <div class="form__btn"><a></a></div>
-              </h3>
+              <h3 class="form__title">Contactez IRYS</h3>
+              <fieldset class="formMail">
+                <label class="formMail__label">Votre adresse-mail</label>
+                <input type="mail" placeholder="Entrez votre adresse mail" class="formMail__input">
+              </fieldset>
+              <fieldset class="formMessage">
+                <label class="formMessage__label">Votre message</label>
+                <textarea type="txt" placeholder="Votre message" row="10" class="formMessage__input"></textarea>
+              </fieldset>
+              <button type="submit" class="form__btn"><a>Envoyer</a></button>
             </form>
           </div>
         </div>
@@ -76,14 +89,14 @@
       <section>
         <div class="container">
           <article class="processus">
-            <h3 class="processus__title"></h3>
-            <p class="processus__txt">
+            <h3 class="processus__title">Comment fonctionne IRYS</h3>
+            <p class="processus__txt"> 
               <ul>
-                <li>Lorem</li>
-                <li>Ipsum</li>
-                <li>Dolor</li>
-                <li>Sit</li>
-                <li>Amet</li>
+                <li>Différentes entreprises afin de les accompagner</li>
+                <li>Comprendre les problèmes auxquels ils sont</li>
+                <li>Chaque mois, je rencontre les salariés</li>
+                <li>Différentes entreprises afin de les accompagner</li>
+                <li>Comprendre les problèmes auxquels ils sont</li>
               </ul>
             </p>
           </article>
@@ -106,8 +119,12 @@
           </ul>
         </nav>
         <div class="social">
-          <div class="social__facebook"></div>
-          <div class="social__twitter"></div>
+          <div class="social__facebook">
+            <p><a>Lien Facebook</a></p>
+          </div>
+          <div class="social__twitter">
+            <p><a>Lien Twitter</a></p>
+          </div>
         </div>
         <div class="legal">
           <p>IRYS Programm - All Rights Reserved</p>

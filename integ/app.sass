@@ -1,13 +1,20 @@
-$brandPrimary : #1840D1
+$brandPrimary : #1840d1
+$textColor: #505050
 
 $fontRegular: 'osRegular'
 $fontLight: 'osLight'
 $fontBold: 'osBold'
-$fontIalic: 'osItalic'
+$fontItalic: 'osItalic'
+
+$time: 0.240s
+
+// $visual-grid: true !global
+// $visual-grid-color: #cfcfcf !global
 
 @import "bourbon/bourbon"
 @import "neat/neat"
 @import "_fonts.sass"
+
 
 *, *::before, *::after
   box-sizing: border-box
@@ -15,17 +22,51 @@ $fontIalic: 'osItalic'
   padding: 0
 
 body
-  font-size: 16px
+  padding-bottom: 80px
+  font-size: 0px
   font-family: $fontRegular, Helvetica, sans-serif
 
 .container
-  @include outer-container
+  @include outer-container(100%)
+  padding: 0px 25px
 
-h1, h2, h3, h4, h5, h6
-  font-family: $fontBold
+h3
+  margin-bottom: 0.6em
 
 p
+  margin-bottom: 0.8em
+  color: $textColor
+  font-size: 16px
   line-height: 1.6em
+
+li
+  @extend p
+  list-style-position: inside
+
+.btn
+  margin-bottom: 2.5em
+  display: inline-block
+  border: 2px solid $brandPrimary
+  border-radius: 4px
+
+  transition: background-color $time ease-out
+
+  a
+    display: inline-block
+    padding: 0.6em 1em
+
+    color: $brandPrimary
+    font-size: 18px
+
+    transition: color $time ease-out
+
+    cursor: pointer
+
+  &:hover
+    background-color: $brandPrimary
+
+    a
+      color: #ffffff
 
 nav
   text-align: center
@@ -39,6 +80,7 @@ nav
     text-transform: uppercase
 
 header
+  margin-bottom: 30px
   height: 400px
 
   color: #ffffff
@@ -47,10 +89,140 @@ header
 
   background-color: $brandPrimary
 
+  .titles
+    transform: translateY(60px)
+
   h1
     margin-bottom: -20px
     font-size: 150px
+    font-family: $fontBold
     letter-spacing: 0.1em
 
   h2
     font-family: $fontLight
+
+article.who
+  @include span-columns(12)
+  margin-bottom: 42px
+
+  .who__title
+    font-family: $fontLight
+    font-size: 30px
+
+  .who__btn
+    @extend .btn
+
+article.actions
+  @include span-columns(12)
+  margin-bottom: 42px
+
+  .actions__title
+    font-family: $fontLight
+    font-size: 30px
+
+  .actions__btn
+    @extend .btn
+
+article.goals
+  @include span-columns(12)
+  margin-bottom: 42px
+
+  .goals__title
+    font-family: $fontLight
+    font-size: 30px
+
+  .goals__btn
+    @extend .btn
+
+article.programm
+  margin: 0 auto
+  margin-bottom: 42px
+
+  .programm__item
+    display: inline-block
+    margin: 0
+    height: 200px
+    width: 50%
+
+    text-align: center
+
+    background-color: $brandPrimary
+    border: 2px solid #ffffff
+
+    p
+      color: #ffffff
+      font-family: $fontBold
+      line-height: 200px
+      text-transform: uppercase
+
+      @include span-columns(12)
+.form
+  margin-bottom: 42px
+  text-align: center
+
+  .form__title
+    margin-bottom: 1.4em
+    font-family: $fontLight
+    font-size: 30px
+    text-align: center
+
+  fieldset
+    border: none
+
+  .formMail__label, .formMessage__label
+    display: block
+    margin-bottom: 0.6em
+    font-family: $fontRegular
+    font-size: 22px
+
+  .formMail__input
+    display: block
+    margin: 0 auto
+    margin-bottom: 21px
+    width: 80%
+    padding: 0.6em 1em
+
+    font-size: 16px
+
+    background-color: #f0f0f0
+    border: none
+    border-radius: 6px
+    outline: none
+
+  .formMessage__input
+    @extend .formMail__input
+    resize: vertical
+
+  .form__btn
+    @extend .btn
+    background-color: $brandPrimary
+
+    a
+      color: #ffffff
+
+article.processus
+  @include span-columns(12)
+  margin-bottom: 42px
+
+  .processus__title
+    font-family: $fontLight
+    font-size: 30px
+
+article.support
+  @include span-columns(12)
+  margin-bottom: 42px
+
+  .support__title
+    font-family: $fontLight
+    font-size: 30px
+
+  .support__btn
+    @extend .btn
+
+footer
+  .social, .legal
+    text-align: center
+
+  .social__facebook, .social__twitter
+    display: inline-block !important
+    padding: 0px 20px

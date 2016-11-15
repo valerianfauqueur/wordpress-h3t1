@@ -23,8 +23,9 @@ html(lang="fr")
           li Contact
     header
       .container
-        h1 Irys
-        h2 No brain, but trillions of ideas
+        .titles
+          h1 Irys
+          h2 No brain, but trillions of ideas
         
     main
       section
@@ -35,7 +36,7 @@ html(lang="fr")
             .who__btn
               a Découvrez qui est IRYS
               
-          articles.actions
+          article.actions
             h3.actions__title IRYS au plus près de ses concitoyens
             p.actions__txt Chaque mois, je rencontre les salariés de différentes entreprises afin de les accompagner et comprendre les problèmes auxquels ils sont confrontés.
             .actions__btn
@@ -49,39 +50,46 @@ html(lang="fr")
             .goals__btn
               a Accéder au programme
               
-          article.programme
-            .programme__item icon
-            .programme__item icon
-            .programme__item icon
-            .programme__item icon
-            .programme__item icon
-            .programme__item icon
+          article.programm
+            .programm__item
+              p icon
+            .programm__item
+              p icon
+            .programm__item
+              p icon
+            .programm__item
+              p icon
+            .programm__item
+              p icon
+            .programm__item
+              p icon
           
       section
         .container
           .form
             form
               h3.form__title Contactez IRYS
-                fieldset.form__mail
-                  label Votre adresse-mail
-                  input(type="mail" placeholder="Entrez votre adresse mail") 
-                fieldset.form__message
-                  label Votre message
-                  textarea(type="txt" placeholder="Votre message")
-                .form__btn
-                  a
+              fieldset.formMail
+                label.formMail__label Votre adresse-mail
+                input.formMail__input(type="mail" placeholder="Entrez votre adresse mail") 
+                
+              fieldset.formMessage
+                label.formMessage__label Votre message
+                textarea.formMessage__input(type="txt" placeholder="Votre message" row="10")
+              button(type="submit").form__btn
+                a Envoyer
                 
       section
         .container
           article.processus
-            h3.processus__title
-            p.processus__txt
+            h3.processus__title Comment fonctionne IRYS
+            p.processus__txt 
               ul
-                li Lorem
-                li Ipsum
-                li Dolor
-                li Sit
-                li Amet
+                li Différentes entreprises afin de les accompagner
+                li Comprendre les problèmes auxquels ils sont
+                li Chaque mois, je rencontre les salariés
+                li Différentes entreprises afin de les accompagner
+                li Comprendre les problèmes auxquels ils sont
                 
           article.support
             h3.support__title Irys a besoin de votre soutien
@@ -99,7 +107,11 @@ html(lang="fr")
             li Contact
         .social
           .social__facebook
+            p
+              a Lien Facebook
           .social__twitter
+            p
+              a Lien Twitter
         .legal
           p IRYS Programm - All Rights Reserved
           
