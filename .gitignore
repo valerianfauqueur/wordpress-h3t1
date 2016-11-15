@@ -14,6 +14,7 @@ wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
+wp-content/themes/irys/node_modules
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
@@ -29,3 +30,5 @@ wp-includes/
 
 #Phpstorm vcs files
 .idea/
+
+/integ

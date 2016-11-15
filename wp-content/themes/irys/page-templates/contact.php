@@ -1,7 +1,7 @@
 <?php
 /**
-*Template Name: biographie
-*/
+ * Template Name: Contact
+ */
 ?>
 
 <?php get_header(); //appel du template header.php  ?>
@@ -9,3 +9,4 @@
 
 
 <?php get_footer(); //appel du template header.php  ?>
+
