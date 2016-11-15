@@ -15,6 +15,9 @@ $time: 0.240s
 @import "neat/neat"
 @import "_fonts.sass"
 
+=adapt($size)
+  @media screen and (min-width: #{$size})
+    @content
 
 *, *::before, *::after
   box-sizing: border-box
@@ -27,8 +30,14 @@ body
   font-family: $fontRegular, Helvetica, sans-serif
 
 .container
-  @include outer-container(100%)
+  +outer-container(100%)
   padding: 0px 25px
+
+  +adapt(1080px)
+    +outer-container(960px)
+
+  +adapt(1450px)
+    +outer-container(1350px)
 
 h3
   margin-bottom: 0.6em
@@ -62,7 +71,7 @@ li
 
     cursor: pointer
 
-  &:hover
+  &:hover, &:focus
     background-color: $brandPrimary
 
     a
@@ -73,11 +82,19 @@ nav
   padding: 20px 0
 
   li
+    margin-bottom: 0
     display: inline-block
-    padding: 0 1.4em
 
     font-family: $fontBold
     text-transform: uppercase
+
+    a
+      padding: 0 1.4em
+      transition: color $time
+
+      &:hover, &:focus
+        color: $brandPrimary
+        cursor: pointer
 
 header
   margin-bottom: 30px
@@ -100,10 +117,19 @@ header
 
   h2
     font-family: $fontLight
+    font-size: 28px
+
+section
+  margin-bottom: 50px
 
 article.who
-  @include span-columns(12)
+  +span-columns(12)
   margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(6)
+    padding-right: 10px
+    border-right: 2px solid #cfcfcf
 
   .who__title
     font-family: $fontLight
@@ -113,8 +139,12 @@ article.who
     @extend .btn
 
 article.actions
-  @include span-columns(12)
+  +span-columns(12)
   margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(6)
+    text-align: right
 
   .actions__title
     font-family: $fontLight
@@ -124,8 +154,11 @@ article.actions
     @extend .btn
 
 article.goals
-  @include span-columns(12)
+  +span-columns(12)
   margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(6)
 
   .goals__title
     font-family: $fontLight
@@ -138,6 +171,9 @@ article.programm
   margin: 0 auto
   margin-bottom: 42px
 
+  +adapt(1080px)
+    +span-columns(6)
+
   .programm__item
     display: inline-block
     margin: 0
@@ -149,13 +185,16 @@ article.programm
     background-color: $brandPrimary
     border: 2px solid #ffffff
 
+    +adapt(1080px)
+      width: 33%
+
     p
       color: #ffffff
       font-family: $fontBold
       line-height: 200px
       text-transform: uppercase
 
-      @include span-columns(12)
+      +span-columns(12)
 .form
   margin-bottom: 42px
   text-align: center
@@ -189,9 +228,12 @@ article.programm
     border-radius: 6px
     outline: none
 
+    +adapt(1080px)
+      width: 600px
+
   .formMessage__input
     @extend .formMail__input
-    resize: vertical
+    resize: verticalcfcfcf
 
   .form__btn
     @extend .btn
@@ -201,16 +243,25 @@ article.programm
       color: #ffffff
 
 article.processus
-  @include span-columns(12)
+  +span-columns(12)
   margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(6)
+    padding-right: 10px
+    border-right: 2px solid #cfcfcf
 
   .processus__title
     font-family: $fontLight
     font-size: 30px
 
 article.support
-  @include span-columns(12)
+  +span-columns(12)
   margin-bottom: 42px
+
+  +adapt(1080px)
+    +span-columns(6)
+    text-align: right
 
   .support__title
     font-family: $fontLight
