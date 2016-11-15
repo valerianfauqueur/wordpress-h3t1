@@ -28,12 +28,3 @@
     wp_nav_menu($args);
     ?>
 </nav>
-<header>
-    <div class="container">
-        <div class="header__background"></div>
-        <div class="header__titles">
-            <h1>Irys</h1>
-            <h2>No brain, but trillions of ideas</h2>
-        </div>
-    </div>
-</header>
