@@ -30,3 +30,5 @@ wp-includes/
 
 #Phpstorm vcs files
 .idea/
+
+/integ
