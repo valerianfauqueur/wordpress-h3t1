@@ -72,7 +72,7 @@ function bio_post_type(){
         'has_archive'         => false,
         'query_var'           => true,
         'can_export'          => true,
-        'rewrite'             => array( 'slug' => 'programme' )
+        'rewrite'             => array( 'slug' => 'biographie' )
     );
     register_post_type('biographie', $args);
 }
