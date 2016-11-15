@@ -97,17 +97,29 @@ nav
         cursor: pointer
 
 header
+  position: relative
   margin-bottom: 30px
   height: 400px
 
   color: #ffffff
   text-align: center
   text-transform: uppercase
+  background-image: url('img/landingBackground.png')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: bottom
 
-  background-color: $brandPrimary
+  .header__background
+    position: absolute
+    height: 100%
+    width: 100%
+    background-color: rgba($brandPrimary, 0.4)
 
-  .titles
+  .header__titles
+    position: relative
     transform: translateY(60px)
+    z-index: 5
+
 
   h1
     margin-bottom: -20px

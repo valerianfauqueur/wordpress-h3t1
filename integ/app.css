@@ -108,14 +108,25 @@ nav {
         cursor: pointer; }
 
 header {
+  position: relative;
   margin-bottom: 30px;
   height: 400px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  background-color: #1840d1; }
-  header .titles {
-    transform: translateY(60px); }
+  background-image: url("img/landingBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  header .header__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(24, 64, 209, 0.4); }
+  header .header__titles {
+    position: relative;
+    transform: translateY(60px);
+    z-index: 5; }
   header h1 {
     margin-bottom: -20px;
     font-size: 150px;
