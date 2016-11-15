@@ -11,14 +11,10 @@
             wp_nav_menu($args);
             ?>
         </nav>
-        <div class="social">
-            <div class="social__facebook">
-                <p><a>Lien Facebook</a></p>
-            </div>
-            <div class="social__twitter">
-                <p><a>Lien Twitter</a></p>
-            </div>
-        </div>
+        <p class="social">
+            <a> <?php the_field('twitter_link') ?><img src="<?php the_field('twitter_icon') ?>" </a>
+            <a> <?php the_field('facebook_link') ?><img src="<?php the_field('facebook_icon') ?>" </a>
+        </p>
         <div class="legal">
             <p>Irys programms - All Rights Reserved</p>
         </div>
