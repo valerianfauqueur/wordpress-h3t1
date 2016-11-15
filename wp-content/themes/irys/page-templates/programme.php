@@ -7,9 +7,12 @@ Template Name: programme
 get_header(); //appel du template header.php  ?>
 
 
-<section class="container programme">
+<section class="container-programme">
+
         <div class="full_img">
             <h1><?php the_title(); ?></h1>
+            <h3><?php the_field("sous_titre"); ?></h3>
+            <p><?php the_field("description"); ?></p>
         </div >
 
         <?php if (have_posts()) : while (have_posts()) : the_post();
@@ -26,9 +29,11 @@ get_header(); //appel du template header.php  ?>
                 while ( $the_query->have_posts() ) {
                     $the_query->the_post();
                     ?>
-                
-                    <h4 class="card-title"><?php the_title(); ?></h4>
-                    <p class="card-text"><?php the_content(); ?></p>
+
+                    <div class="chapitre">
+                        <h4 class=""><?php the_title(); ?></h4>
+                        <p class=""><?php the_content(); ?></p>
+                    </div>
 
                     <?php
                 }
