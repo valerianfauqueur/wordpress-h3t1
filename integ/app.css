@@ -114,6 +114,10 @@ nav {
         color: #1840d1;
         cursor: pointer; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 header {
   position: relative;
   margin-bottom: 30px;
