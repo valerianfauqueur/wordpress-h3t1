@@ -1,11 +1,9 @@
-<?php
-/*
-Template Name: biographie
-*/
-?>
+
+<?php /* Template Name: Contact */ ?>
 
 <?php get_header(); //appel du template header.php  ?>
 
 
 
 <?php get_footer(); //appel du template header.php  ?>
+
