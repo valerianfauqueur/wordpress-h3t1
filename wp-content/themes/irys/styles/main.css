@@ -29,7 +29,7 @@ html {
 
 @font-face {
   font-family: 'osItalic';
-  src: url("../fonts/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/opensans-italic-webfont.woff") format("woff");
+  src: url("fonts/opensans-italic-webfont.woff2") format("woff2"), url("fonts/opensans-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -101,7 +101,7 @@ li {
   list-style-position: inside;
 }
 
-.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .support .support__btn, .envies .envies__btn, .travel .travel__btn {
+.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .support .support__btn, .envies .envies__btn, .travel .travel__btn, .caractereArticle .tag {
   margin-bottom: 2.5em;
   display: inline-block;
   border: 2px solid #1840d1;
@@ -109,7 +109,7 @@ li {
   transition: background-color 0.24s ease-out;
 }
 
-.btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a {
+.btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a {
   display: inline-block;
   padding: 0.6em 1em;
   color: #1840d1;
@@ -118,11 +118,11 @@ li {
   cursor: pointer;
 }
 
-.btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus {
+.btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .caractereArticle .tag:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus, .caractereArticle .tag:focus {
   background-color: #1840d1;
 }
 
-.btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a {
+.btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .caractereArticle .tag:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a, .caractereArticle .tag:focus a {
   color: #ffffff;
 }
 
@@ -176,7 +176,7 @@ header {
 
 @media screen and (min-width: 600px) {
   header {
-    background-image: url("../images/landingBackground.png");
+    background-image: url("img/landingBackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -803,6 +803,91 @@ section {
   background-color: #ececec;
   transform-origin: 50% 0%;
   transform: rotate(-5deg);
+}
+
+.caractereArticle {
+  margin-bottom: 42px;
+  clear: both;
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle {
+    text-align: right;
+  }
+}
+
+.caractereArticle .caractereArticle__img {
+  height: 300px;
+  background-color: #333333;
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle .caractereArticle__img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .caractereArticle .caractereArticle__img:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle .caractereArticle__infos {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .caractereArticle .caractereArticle__infos:last-child {
+    margin-right: 0;
+  }
+}
+
+.caractereArticle .caractereArticle__title {
+  font-family: "osLight";
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle .caractereArticle__title {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle .caractereArticle__txt {
+    text-align: right;
+  }
+}
+
+.caractereArticle .tag {
+  cursor: default;
+}
+
+.caractereArticle .tag:first-of-type {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle:nth-child(even) {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle:nth-child(even) .caractereArticle__img {
+    margin-right: -10px;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .caractereArticle:nth-child(even) .caractereArticle__title, .caractereArticle:nth-child(even) .caractereArticle__txt {
+    text-align: left;
+  }
 }
 
 footer .social, footer .legal {
