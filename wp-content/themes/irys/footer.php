@@ -12,11 +12,11 @@
             ?>
         </nav>
         <p class="social">
-            <a href="<?php the_field('twitter_link')?>">
-                <div class="<?php the_field('twitter_font_awesome')?>"></div>
+            <a href="<?php the_field('twitter_link') ?>">
+                <span class="<?php the_field('twitter_font_awesome') ?>"></span>
             </a>
-            <a href="<?php the_field('facebook_link')?>">
-                <div> class="<?php the_field('facebook_font_awesome')?>"></div>
+            <a href="<?php the_field('facebook_link') ?>">
+                <span class="<?php the_field('facebook_font_awesome') ?>"></span>
             </a>
         </p>
         <div class="legal">
