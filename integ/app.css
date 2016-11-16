@@ -268,9 +268,9 @@ section {
       .programm .programm__item {
         width: 33%; } }
     .programm .programm__item p, .programm .programm__item li {
+      margin-top: 75px;
       color: #ffffff;
       font-family: "osBold", Helvetica, Arial, sans-serif;
-      line-height: 200px;
       text-transform: uppercase;
       float: left;
       display: block;
