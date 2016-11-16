@@ -12,9 +12,11 @@ function ajout_scripts()
 
     wp_localize_script('main', 'ajaxurl', admin_url('admin-ajax.php'));
 
-    wp_register_style('font-awesome', 'https://use.fontawesome.com/d6bf6738a1.js');
 
-    wp_enqueue_style('font-awesome');
+    wp_register_script('font-awesome', 'https://use.fontawesome.com/d6bf6738a1.js');
+
+    wp_enqueue_script('font-awesome');
+
 
     // enregistrement d'un nouveau style
     wp_register_style('google-font', 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow');

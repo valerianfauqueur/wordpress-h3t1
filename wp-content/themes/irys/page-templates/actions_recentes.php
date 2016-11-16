@@ -38,8 +38,13 @@
                         <h4 class="event__title"><?php the_title() ?></h4>
                         <p class="event__txt"><?php the_field('action_texte') ?></p>
                         <p class="social">
-                            <a> <?php the_field('twitter_link') ?><img src="<?php the_field('twitter_icon') ?>" </a>
-                            <a> <?php the_field('facebook_link') ?><img src="<?php the_field('facebook_icon') ?>" </a>
+                            <a href="<?php the_field('twitter_link') ?>">
+                                <div class="<?php the_field('twitter_font_awesome') ?>"></div>
+                            </a>
+                            <a href="<?php the_field('facebook_link') ?>">
+                                <div class="<?php the_field('facebook_font_awesome') ?>">
+                                </div>
+                            </a>
                         </p>
                         <div class="event__img"><img src="<?php the_field('action_img') ?>" alt="<?php the_title() ?>"/>
                         </div>
@@ -91,6 +96,7 @@
             <a class="travel__btn"
                href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
         </article>
+
 </main>
 <?php get_footer(); //appel du template header.php
 ?>

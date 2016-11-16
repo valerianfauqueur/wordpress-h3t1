@@ -12,11 +12,11 @@
             ?>
         </nav>
         <p class="social">
-            <a> <?php the_field('twitter_link') ?>
-                <div class="<?php the_field('twitter_icon') ?>"></div>
+            <a href="<?php the_field('twitter_link')?>">
+                <div class="<?php the_field('twitter_font_awesome')?>"></div>
             </a>
-            <a> <?php the_field('facebook_link') ?>
-                <div> lass="<?php the_field('facebook_icon') ?>"></div>
+            <a href="<?php the_field('facebook_link')?>">
+                <div> class="<?php the_field('facebook_font_awesome')?>"></div>
             </a>
         </p>
         <div class="legal">
@@ -24,7 +24,6 @@
         </div>
     </div>
 </footer>
-
 <!-- Execution de la fonction wp_footer() obligatoire ! -->
 <?php wp_footer(); ?>
 </body>
