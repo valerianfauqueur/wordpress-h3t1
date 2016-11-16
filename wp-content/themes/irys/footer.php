@@ -6,7 +6,7 @@
                 'theme_location' => 'footer', // nom du slug
                 'menu' => 'footer_fr', // nom à donner cette occurence du menu
                 'menu_class' => 'menu_footer container', // class à attribuer au menu
-                'menu_id' => 'fooyer_id' // id à attribuer au menu
+                'menu_id' => 'footer_id' // id à attribuer au menu
             );
             wp_nav_menu($args);
             ?>
