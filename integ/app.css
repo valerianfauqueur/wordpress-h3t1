@@ -388,7 +388,8 @@ section {
   background-color: #efefef; }
   .article .article__img {
     height: 250px;
-    background-color: #303030; }
+    background-color: #303030;
+    overflow: hidden; }
     @media screen and (min-width: 1080px) {
       .article .article__img {
         float: left;
@@ -397,6 +398,8 @@ section {
         width: 48.82117%; }
         .article .article__img:last-child {
           margin-right: 0; } }
+    .article .article__img img {
+      height: 100%; }
   .article .article__infos {
     padding: 15px;
     text-align: right; }
@@ -569,7 +572,10 @@ section {
   .caractereArticle .caractereArticle__img {
     height: 300px;
     background-color: #333333;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .caractereArticle .caractereArticle__img img {
+      height: 100%; }
     @media screen and (min-width: 1080px) {
       .caractereArticle .caractereArticle__img {
         float: left;
