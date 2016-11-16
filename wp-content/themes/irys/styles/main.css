@@ -1,0 +1,506 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "osRegular";
+  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"), url("fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osLight";
+  src: url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osBold";
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osItalic";
+  src: url("fonts/opensans-italic-webfont.woff2") format("woff2"), url("fonts/opensans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding-bottom: 80px;
+  font-size: 0px;
+  font-family: "osRegular", Helvetica, sans-serif; }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 25px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (min-width: 1080px) {
+    .container {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      .container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media screen and (min-width: 1450px) {
+    .container {
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto; }
+      .container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+h3, h4 {
+  margin-bottom: 0.6em; }
+
+p, li {
+  margin-bottom: 0.8em;
+  color: #505050;
+  font-size: 16px;
+  line-height: 1.6em; }
+
+li {
+  list-style-position: inside; }
+
+.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .support .support__btn, .envies .envies__btn, .travel .travel__btn {
+  margin-bottom: 2.5em;
+  display: inline-block;
+  border: 2px solid #1840d1;
+  border-radius: 4px;
+  transition: background-color 0.24s ease-out; }
+  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a {
+    display: inline-block;
+    padding: 0.6em 1em;
+    color: #1840d1;
+    font-size: 18px;
+    transition: color 0.24s ease-out;
+    cursor: pointer; }
+  .btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus {
+    background-color: #1840d1; }
+    .btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a {
+      color: #ffffff; }
+
+nav {
+  text-align: center;
+  padding: 20px 0; }
+  nav li {
+    margin-bottom: 2em;
+    display: block;
+    font-family: "osBold";
+    text-transform: uppercase; }
+    @media screen and (min-width: 600px) {
+      nav li {
+        margin-bottom: 0;
+        display: inline-block; } }
+    nav li a {
+      padding: 2em 0;
+      transition: color 0.24s; }
+      @media screen and (min-width: 600px) {
+        nav li a {
+          padding: 0 1.4em; } }
+      nav li a:hover, nav li a:focus {
+        color: #1840d1;
+        cursor: pointer; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+header {
+  position: relative;
+  margin-bottom: 30px;
+  height: 400px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (min-width: 600px) {
+    header {
+      background-image: url("img/landingBackground.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; } }
+  header .header__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1840d1;
+    transition: background-color 0.24s; }
+    @media screen and (min-width: 600px) {
+      header .header__background {
+        background-color: rgba(24, 64, 209, 0.4); } }
+  header .header__titles {
+    position: relative;
+    transform: translateY(120px);
+    z-index: 5; }
+    @media screen and (min-width: 600px) {
+      header .header__titles {
+        transform: translateY(60px); } }
+  header h1 {
+    margin-bottom: -20px;
+    font-size: 100px;
+    font-family: "osBold"; }
+    @media screen and (min-width: 600px) {
+      header h1 {
+        font-size: 150px;
+        letter-spacing: 0.1em; } }
+  header h2 {
+    font-family: "osLight";
+    font-size: 20px; }
+    @media screen and (min-width: 600px) {
+      header h2 {
+        font-size: 28px; } }
+  header.actions {
+    width: 100%;
+    text-align: center; }
+    header.actions .header__titles {
+      position: relative;
+      transform: translateY(100px);
+      z-index: 5; }
+      @media screen and (min-width: 650px) {
+        header.actions .header__titles {
+          transform: translateY(150px); } }
+    header.actions h1 {
+      font-size: 36px;
+      margin-bottom: 0; }
+      @media screen and (min-width: 650px) {
+        header.actions h1 {
+          font-size: 42px;
+          letter-spacing: 0.1em; } }
+
+section {
+  margin-bottom: 50px; }
+
+.who {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .who:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .who {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; }
+      .who:last-child {
+        margin-right: 0; } }
+  .who .who__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.actions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .actions:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .actions {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-align: right; }
+      .actions:last-child {
+        margin-right: 0; } }
+  .actions .actions__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.goals {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .goals:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .goals {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .goals:last-child {
+        margin-right: 0; } }
+  .goals .goals__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.programm {
+  margin: 0 auto;
+  margin-bottom: 42px; }
+  @media screen and (min-width: 1080px) {
+    .programm {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .programm:last-child {
+        margin-right: 0; } }
+  .programm .programm__item {
+    display: inline-block;
+    margin: 0;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    background-color: #1840d1;
+    border: 2px solid #ffffff; }
+    @media screen and (min-width: 1080px) {
+      .programm .programm__item {
+        width: 33%; } }
+    .programm .programm__item p, .programm .programm__item li {
+      color: #ffffff;
+      font-family: "osBold";
+      line-height: 200px;
+      text-transform: uppercase;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .programm .programm__item p:last-child, .programm .programm__item li:last-child {
+        margin-right: 0; }
+
+.form {
+  margin-bottom: 42px;
+  text-align: center; }
+  .form .form__title {
+    margin-bottom: 1.4em;
+    font-family: "osLight";
+    font-size: 30px;
+    text-align: center; }
+  .form fieldset {
+    border: none; }
+  .form .formMail__label, .form .formMessage__label {
+    display: block;
+    margin-bottom: 0.6em;
+    font-family: "osRegular";
+    font-size: 22px; }
+  .form .formMail__input, .form .formMessage__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    width: 80%;
+    padding: 0.6em 1em;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    outline: none; }
+    @media screen and (min-width: 1080px) {
+      .form .formMail__input, .form .formMessage__input {
+        width: 600px; } }
+  .form .formMessage__input {
+    resize: verticalcfcfcf; }
+  .form .form__btn {
+    background-color: #1840d1; }
+    .form .form__btn a {
+      color: #ffffff; }
+
+.processus {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .processus:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .processus {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; }
+      .processus:last-child {
+        margin-right: 0; } }
+  .processus .processus__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.support {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .support:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .support {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-align: right; }
+      .support:last-child {
+        margin-right: 0; } }
+  .support .support__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.region {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .region:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .region:last-child {
+        margin-right: 0; } }
+  .region .region__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.events {
+  clear: both;
+  margin-bottom: 42px; }
+
+.event {
+  margin-bottom: 30px;
+  clear: both;
+  background-color: #efefef; }
+  .event .event__img {
+    height: 250px;
+    background-color: #303030; }
+    @media screen and (min-width: 1080px) {
+      .event .event__img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .event .event__img:last-child {
+          margin-right: 0; } }
+  .event .event__infos {
+    padding: 15px;
+    text-align: right; }
+    @media screen and (min-width: 1080px) {
+      .event .event__infos {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .event .event__infos:last-child {
+          margin-right: 0; } }
+  .event .event__title {
+    font-family: "osLight";
+    font-size: 30px; }
+  .event .social a {
+    padding: 0 10px; }
+
+.nextEvents {
+  margin: 0 42px;
+  text-align: center;
+  clear: both; }
+
+.nextEvent {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 1080px) {
+    .nextEvent {
+      display: inline-block;
+      padding: 10px;
+      width: 15%;
+      text-align: center;
+      border: 1px solid #333333; } }
+  .nextEvent p.nextEvent__date, .nextEvent li.nextEvent__date {
+    font-family: "osBold"; }
+
+.usine {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .usine:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .usine {
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; } }
+  .usine .usine__title {
+    font-family: "osLight";
+    font-size: 30px; }
+
+.envies {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px;
+  text-align: center; }
+  .envies:last-child {
+    margin-right: 0; }
+  .envies .envies__title {
+    font-family: "osLight";
+    font-size: 30px;
+    text-align: center; }
+  .envies .envies__txt {
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .envies .envies__txt {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px; } }
+
+.travel {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .travel:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .travel {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      .travel:last-child {
+        margin-right: 0; } }
+  .travel .travel__title {
+    font-family: "osLight";
+    font-size: 30px; }
+  .travel .travel__txt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .travel .travel__txt {
+        width: 400px; } }
+
+footer .social, footer .legal {
+  text-align: center; }
+footer .social__facebook, footer .social__twitter {
+  display: inline-block !important;
+  padding: 0px 20px; }
+
+/*# sourceMappingURL=app.css.map */

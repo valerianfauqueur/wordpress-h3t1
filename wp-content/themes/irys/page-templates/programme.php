@@ -7,17 +7,17 @@ Template Name: programme
 get_header(); //appel du template header.php  ?>
 
 
-<section class="container-programme">
-
-        <div class="full_img">
+    <header class="programme">
+      <div class="header__background"></div>
+      <div class="container">
+        <div class="header__titles">
             <h1><?php the_title(); ?></h1>
             <h3><?php the_field("sous_titre"); ?></h3>
             <p><?php the_field("description"); ?></p>
         </div>
-
-        <?php if (have_posts()) : while (have_posts()) : the_post();
-            the_content();
-        endwhile; endif; ?>
+      </div>
+    </header>
+    <section>
 
         <?php
             // The Query
@@ -30,10 +30,15 @@ get_header(); //appel du template header.php  ?>
                     $the_query->the_post();
                     ?>
 
-                    <div class="chapitre">
-                        <h4 class=""><?php the_title(); ?></h4>
-                        <p class=""><?php the_content(); ?></p>
-                    </div>
+                    <article class="programmeArticle">
+                        <div class="container">
+                          <div class="title__container"> 
+                            <h3 class="programmeArticle__title"><?php the_title(); ?></h3>
+                            <p class="number">1</p>
+                          </div>
+                          <p class="programmeArticle__txt"><?php the_content(); ?></p>
+                        </div>
+                    </article>
 
                     <?php
                 }
@@ -43,8 +48,8 @@ get_header(); //appel du template header.php  ?>
                 // no posts found
             }
         ?>
+    </section>
 
-</section>
 
 <?php get_template_part('additionnal-info'); ?>
 <?php get_footer(); //appel du template header.php  ?>
