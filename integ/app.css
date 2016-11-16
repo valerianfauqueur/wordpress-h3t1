@@ -570,12 +570,11 @@ section {
     .caractereArticle {
       text-align: right; } }
   .caractereArticle .caractereArticle__img {
-    height: 300px;
     background-color: #333333;
     margin-bottom: 30px;
     overflow: hidden; }
     .caractereArticle .caractereArticle__img img {
-      height: 100%; }
+      width: 100%; }
     @media screen and (min-width: 1080px) {
       .caractereArticle .caractereArticle__img {
         float: left;
