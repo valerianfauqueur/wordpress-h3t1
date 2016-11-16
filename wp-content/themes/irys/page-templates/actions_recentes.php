@@ -39,11 +39,10 @@
                         <p class="event__txt"><?php the_field('action_texte') ?></p>
                         <p class="social">
                             <a href="<?php the_field('twitter_link') ?>">
-                                <div class="<?php the_field('twitter_font_awesome') ?>"></div>
+                                <span class="<?php the_field('twitter_font_awesome') ?>"></span>
                             </a>
                             <a href="<?php the_field('facebook_link') ?>">
-                                <div class="<?php the_field('facebook_font_awesome') ?>">
-                                </div>
+                                <span class="<?php the_field('facebook_font_awesome') ?>"></span>
                             </a>
                         </p>
                         <div class="event__img"><img src="<?php the_field('action_img') ?>" alt="<?php the_title() ?>"/>
