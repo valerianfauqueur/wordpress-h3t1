@@ -81,8 +81,9 @@ li {
   border: 2px solid #1840d1;
   border-radius: 4px;
   transition: background-color 0.24s ease-out; }
-  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .form #label-submit a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a {
+  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .form #label-submit a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a, .btn p, .who .who__btn p, .actions .actions__btn p, .goals .goals__btn p, .form .form__btn p, .form #label-submit p, .support .support__btn p, .envies .envies__btn p, .travel .travel__btn p, .caractereArticle .tag p, .btn li, .who .who__btn li, .actions .actions__btn li, .goals .goals__btn li, .form .form__btn li, .form #label-submit li, .support .support__btn li, .envies .envies__btn li, .travel .travel__btn li, .caractereArticle .tag li {
     display: inline-block;
+    margin-bottom: 0;
     padding: 0.6em 1em;
     color: #1840d1;
     font-size: 18px;
