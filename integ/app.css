@@ -171,6 +171,12 @@ header {
         header.actions h1, header.programme h1, header.bio h1 {
           font-size: 42px;
           letter-spacing: 0.1em; } }
+  header.actions {
+    background-image: url("img/actionsBackground.png"); }
+  header.programme {
+    background-image: url("img/programmeBackground.png"); }
+  header.bio {
+    background-image: url("img/bioBackground.png"); }
 
 section {
   margin-bottom: 50px;
