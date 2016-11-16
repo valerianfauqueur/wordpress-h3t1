@@ -26,15 +26,17 @@ get_header(); //appel du template header.php  ?>
 
             // The Loop
             if ( $the_query->have_posts() ) {
+                $loopNumber = 0;
                 while ( $the_query->have_posts() ) {
                     $the_query->the_post();
+                    $loopNumber++;
                     ?>
 
                     <article class="programmeArticle">
                         <div class="container">
                           <div class="title__container"> 
                             <h3 class="programmeArticle__title"><?php the_title(); ?></h3>
-                            <p class="number">1</p>
+                            <p class="number"><?php echo $loopNumber; ?></p>
                           </div>
                           <p class="programmeArticle__txt"><?php the_content(); ?></p>
                         </div>

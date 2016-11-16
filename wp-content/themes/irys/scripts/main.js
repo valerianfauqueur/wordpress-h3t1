@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+/*jQuery(document).ready(function($){
   
   var rechercheEnCours=false;
   
@@ -91,14 +91,4 @@ jQuery(document).ready(function($){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
+*/
