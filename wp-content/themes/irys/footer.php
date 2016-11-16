@@ -12,8 +12,12 @@
             ?>
         </nav>
         <p class="social">
-            <a> <?php the_field('twitter_link') ?><img src="<?php the_field('twitter_icon') ?>" </a>
-            <a> <?php the_field('facebook_link') ?><img src="<?php the_field('facebook_icon') ?>" </a>
+            <a> <?php the_field('twitter_link') ?>
+                <div class="<?php the_field('twitter_icon') ?>"></div>
+            </a>
+            <a> <?php the_field('facebook_link') ?>
+                <div> lass="<?php the_field('facebook_icon') ?>"></div>
+            </a>
         </p>
         <div class="legal">
             <p>Programme Irys - All Rights Reserved</p>
