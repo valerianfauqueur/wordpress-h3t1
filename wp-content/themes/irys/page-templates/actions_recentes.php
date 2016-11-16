@@ -38,11 +38,11 @@
                         <h4 class="event__title"><?php the_title() ?></h4>
                         <p class="event__txt"><?php the_field('action_texte') ?></p>
                         <p class="social">
-                            <a href="<?php the_field('twitter_link') ?>">
-                                <span class="<?php the_field('twitter_font_awesome') ?>"></span>
+                            <a href="<?php the_field('social_link_1') ?>">
+                                <span class="<?php the_field('social_icon_1') ?>"></span>
                             </a>
-                            <a href="<?php the_field('facebook_link') ?>">
-                                <span class="<?php the_field('facebook_font_awesome') ?>"></span>
+                            <a href="<?php the_field('social_link_2') ?>">
+                                <span class="<?php the_field('social_icon_2') ?>"></span>
                             </a>
                         </p>
                         <div class="event__img"><img src="<?php the_field('action_img') ?>" alt="<?php the_title() ?>"/>
