@@ -19,12 +19,12 @@
           <article class="who">
             <h3 class="who__title"><?php the_field("titre_1"); ?></h3>
             <p class="who__txt"><?php the_field("description_1"); ?></p>
-            <div class="who__btn"><a href="<?php the_field("bouton_lien_1"); ?>"><?php the_field("bouton_texte_1"); ?></a></div>
+            <div class="who__btn"><a href="<?php the_field('bouton_url_1'); ?>"><?php the_field("bouton_texte_1"); ?></a></div>
           </article>
           <article class="actions">
             <h3 class="actions__title"><?php the_field("titre_2"); ?></h3>
             <p class="actions__txt"><?php the_field("description_1"); ?></p>
-            <div class="actions__btn"><a href="<?php the_field("bouton_lien_2"); ?>"><?php the_field("bouton_texte_2"); ?></a></div>
+            <div class="actions__btn"><a href="<?php the_field('bouton_url_2'); ?>"><?php the_field("bouton_texte_2"); ?></a></div>
           </article>
         </div>
       </section>
@@ -33,7 +33,7 @@
           <article class="goals">
             <h3 class="goals__title"><?php the_field("titre_3"); ?></h3>
             <p class="goals__txt"><?php the_field("description_1"); ?></p>
-            <div class="goals__btn"><a href="<?php the_field("bouton_lien_3"); ?>"><?php the_field("bouton_texte_3"); ?></a></div>
+            <div class="goals__btn"><a href="<?php the_field('bouton_url_3'); ?>"><?php the_field("bouton_texte_3"); ?></a></div>
           </article>
           <article class="programm">
             <div class="programm__item">
