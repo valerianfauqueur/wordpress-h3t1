@@ -158,17 +158,17 @@ header {
     @media screen and (min-width: 600px) {
       header h2 {
         font-size: 28px; } }
-  header.actions, header.programme {
+  header.actions, header.programme, header.bio {
     width: 100%;
     text-align: center; }
-    header.actions .header__titles, header.programme .header__titles {
+    header.actions .header__titles, header.programme .header__titles, header.bio .header__titles {
       position: relative;
       z-index: 5; }
-    header.actions h1, header.programme h1 {
+    header.actions h1, header.programme h1, header.bio h1 {
       font-size: 36px;
       margin-bottom: 0; }
       @media screen and (min-width: 650px) {
-        header.actions h1, header.programme h1 {
+        header.actions h1, header.programme h1, header.bio h1 {
           font-size: 42px;
           letter-spacing: 0.1em; } }
 
