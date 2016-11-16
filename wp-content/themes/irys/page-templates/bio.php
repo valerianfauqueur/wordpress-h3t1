@@ -35,11 +35,7 @@
                         if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):
                             foreach ( $terms as $term ):
                         ?>
-                            <li>
-                                <a href='#' title='<?= $term->name ?>' data-id='<?= $term->term_id ?>' >
-                                    <?= $term->name ?>
-                                </a>
-                            </li>
+                            <li><?= $term->name ?></li>
                         <?php
                             endforeach;
                         endif;
