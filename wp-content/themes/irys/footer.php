@@ -16,7 +16,7 @@
             <a> <?php the_field('facebook_link') ?><img src="<?php the_field('facebook_icon') ?>" </a>
         </p>
         <div class="legal">
-            <p>Irys programms - All Rights Reserved</p>
+            <p>Programme Irys - All Rights Reserved</p>
         </div>
     </div>
 </footer>
