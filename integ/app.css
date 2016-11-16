@@ -32,7 +32,7 @@ html {
 body {
   padding-bottom: 80px;
   font-size: 0px;
-  font-family: "osRegular", Helvetica, sans-serif;
+  font-family: "osRegular", Helvetica, Arial, sans-serif, Helvetica, sans-serif;
   overflow-x: hidden; }
 
 .container {
@@ -99,7 +99,7 @@ nav {
   nav li {
     margin-bottom: 2em;
     display: block;
-    font-family: "osBold";
+    font-family: "osBold", Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
     @media screen and (min-width: 600px) {
       nav li {
@@ -147,13 +147,13 @@ header {
   header h1 {
     margin-bottom: -20px;
     font-size: 100px;
-    font-family: "osBold"; }
+    font-family: "osBold", Helvetica, Arial, sans-serif; }
     @media screen and (min-width: 600px) {
       header h1 {
         font-size: 150px;
         letter-spacing: 0.1em; } }
   header h2 {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 20px; }
     @media screen and (min-width: 600px) {
       header h2 {
@@ -180,7 +180,7 @@ header {
 
 section {
   margin-bottom: 50px;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .who {
   float: left;
@@ -201,7 +201,7 @@ section {
       .who:last-child {
         margin-right: 0; } }
   .who .who__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .actions {
@@ -222,7 +222,7 @@ section {
       .actions:last-child {
         margin-right: 0; } }
   .actions .actions__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .goals {
@@ -242,7 +242,7 @@ section {
       .goals:last-child {
         margin-right: 0; } }
   .goals .goals__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .programm {
@@ -269,7 +269,7 @@ section {
         width: 33%; } }
     .programm .programm__item p, .programm .programm__item li {
       color: #ffffff;
-      font-family: "osBold";
+      font-family: "osBold", Helvetica, Arial, sans-serif;
       line-height: 200px;
       text-transform: uppercase;
       float: left;
@@ -284,7 +284,7 @@ section {
   text-align: center; }
   .form .form__title {
     margin-bottom: 1.4em;
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px;
     text-align: center; }
   .form fieldset {
@@ -292,7 +292,7 @@ section {
   .form .formMail__label, .form .formMessage__label {
     display: block;
     margin-bottom: 0.6em;
-    font-family: "osRegular";
+    font-family: "osRegular", Helvetica, Arial, sans-serif;
     font-size: 22px; }
   .form .formMail__input, .form .formMessage__input {
     display: block;
@@ -334,7 +334,7 @@ section {
       .processus:last-child {
         margin-right: 0; } }
   .processus .processus__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .support {
@@ -355,7 +355,7 @@ section {
       .support:last-child {
         margin-right: 0; } }
   .support .support__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .region {
@@ -375,7 +375,7 @@ section {
       .region:last-child {
         margin-right: 0; } }
   .region .region__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .events {
@@ -409,7 +409,7 @@ section {
         .article .article__infos:last-child {
           margin-right: 0; } }
   .article .article__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
   .article .social a {
     padding: 0 10px; }
@@ -429,7 +429,7 @@ section {
       text-align: center;
       border: 1px solid #333333; } }
   .nextEvent p.nextEvent__date, .nextEvent li.nextEvent__date {
-    font-family: "osBold"; }
+    font-family: "osBold", Helvetica, Arial, sans-serif; }
 
 .usine {
   float: left;
@@ -444,7 +444,7 @@ section {
       padding-right: 10px;
       border-right: 2px solid #cfcfcf; } }
   .usine .usine__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
 
 .envies {
@@ -457,7 +457,7 @@ section {
   .envies:last-child {
     margin-right: 0; }
   .envies .envies__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px;
     text-align: center; }
   .envies .envies__txt {
@@ -486,7 +486,7 @@ section {
       .travel:last-child {
         margin-right: 0; } }
   .travel .travel__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px; }
   .travel .travel__txt {
     margin-left: auto;
@@ -518,7 +518,7 @@ section {
   .programmeArticle .title__container {
     position: relative; }
   .programmeArticle .programmeArticle__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px;
     text-align: center; }
     @media screen and (min-width: 1080px) {
@@ -529,7 +529,7 @@ section {
     top: 0;
     left: 50%;
     color: rgba(24, 64, 209, 0.3);
-    font-family: "osBold";
+    font-family: "osBold", Helvetica, Arial, sans-serif;
     font-size: 56px;
     transform: translate(-50%, -30%); }
     @media screen and (min-width: 1080px) {
@@ -587,7 +587,7 @@ section {
       .caractereArticle .caractereArticle__infos:last-child {
         margin-right: 0; } }
   .caractereArticle .caractereArticle__title {
-    font-family: "osLight";
+    font-family: "osLight", Helvetica, Arial, sans-serif;
     font-size: 30px;
     text-align: center; }
     @media screen and (min-width: 1080px) {
