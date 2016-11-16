@@ -75,22 +75,22 @@ p, li {
 li {
   list-style-position: inside; }
 
-.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .support .support__btn, .envies .envies__btn, .travel .travel__btn, .caractereArticle .tag {
+.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .form #label-submit, .support .support__btn, .envies .envies__btn, .travel .travel__btn, .caractereArticle .tag {
   margin-bottom: 2.5em;
   display: inline-block;
   border: 2px solid #1840d1;
   border-radius: 4px;
   transition: background-color 0.24s ease-out; }
-  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a {
+  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .form #label-submit a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a {
     display: inline-block;
     padding: 0.6em 1em;
     color: #1840d1;
     font-size: 18px;
     transition: color 0.24s ease-out;
     cursor: pointer; }
-  .btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .caractereArticle .tag:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus, .caractereArticle .tag:focus {
+  .btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .form #label-submit:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .caractereArticle .tag:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .form #label-submit:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus, .caractereArticle .tag:focus {
     background-color: #1840d1; }
-    .btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .caractereArticle .tag:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a, .caractereArticle .tag:focus a {
+    .btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .form #label-submit:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .caractereArticle .tag:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .form #label-submit:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a, .caractereArticle .tag:focus a {
       color: #ffffff; }
 
 nav {
@@ -310,9 +310,9 @@ section {
         width: 600px; } }
   .form .formMessage__input {
     resize: verticalcfcfcf; }
-  .form .form__btn {
+  .form .form__btn, .form #label-submit {
     background-color: #1840d1; }
-    .form .form__btn a {
+    .form .form__btn a, .form #label-submit a {
       color: #ffffff; }
 
 .processus {
