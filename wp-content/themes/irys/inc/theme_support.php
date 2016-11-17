@@ -11,3 +11,5 @@ function menus_du_themes() {
   register_nav_menu( 'footer', 'Menu bas de page' );
   register_nav_menu( 'topBar', 'Menu top Bar' );
 }
+
+remove_filter('the_content', 'wpautop');
