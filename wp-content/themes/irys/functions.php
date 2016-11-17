@@ -18,6 +18,9 @@ include_once('inc/theme_support.php');
 // AJAX FUNCTIONS
 include_once('inc/ajax.php');
 
+// ACF OPTION PAGE
+include_once('inc/acf_options_page.php');
+
 
 
 
