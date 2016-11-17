@@ -20,7 +20,7 @@
             </a>
         </p>
         <div class="legal">
-            <p>Programme Irys - All Rights Reserved</p>
+            <p>Programme Irys - Tous droits réservés</p>
         </div>
     </div>
 </footer>
