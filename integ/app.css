@@ -408,7 +408,7 @@ section {
         .article .article__img:last-child {
           margin-right: 0; } }
     .article .article__img img {
-      height: 100%; }
+      width: 100%; }
   .article .article__infos {
     padding: 15px;
     text-align: right; }
