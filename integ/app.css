@@ -1,64 +1,634 @@
-/*
-Error: Invalid CSS after "$brandPrimary ": expected expression (e.g. 1px, bold), was "@important"
-        on line 316 of app.sass
+html {
+  box-sizing: border-box; }
 
-311:     @extend .formMail__input
-312:     resize: vertical
-313: 
-314:   .form__btn, #label-submit
-315:     @extend .btn @important
-316:     background-color: $brandPrimary @important
-317: 
-318:     a
-319:       color: #ffffff @important
-320: 
-321: .processus
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-app.sass:316
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:738:in `assert_done'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:76:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:240:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script.rb:27:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:1151:in `parse_script'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:721:in `parse_property'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:692:in `parse_property_or_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:658:in `parse_line'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:545:in `block in build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:538:in `build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$brandPrimary \": expected expression (e.g. 1px, bold), was \"@important\"\A         on line 316 of app.sass\A \A 311:     @extend .formMail__input\A 312:     resize: vertical\A 313: \A 314:   .form__btn, #label-submit\A 315:     @extend .btn @important\A 316:     background-color: $brandPrimary @important\A 317: \A 318:     a\A 319:       color: #ffffff @important\A 320: \A 321: .processus"; }
+@font-face {
+  font-family: "osRegular";
+  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"), url("fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osLight";
+  src: url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osBold";
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "osItalic";
+  src: url("fonts/opensans-italic-webfont.woff2") format("woff2"), url("fonts/opensans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding-bottom: 80px;
+  font-size: 0px;
+  font-family: "osRegular", Helvetica, Arial, sans-serif, Helvetica, sans-serif;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 25px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (min-width: 1080px) {
+    .container {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      .container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+  @media screen and (min-width: 1450px) {
+    .container {
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto; }
+      .container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+h3, h4 {
+  margin-bottom: 0.6em; }
+
+p, li {
+  margin-bottom: 0.8em;
+  color: #505050;
+  font-size: 16px;
+  line-height: 1.6em; }
+
+li {
+  list-style-position: inside; }
+
+.btn, .who .who__btn, .actions .actions__btn, .goals .goals__btn, .form .form__btn, .form #label-submit, .support .support__btn, .envies .envies__btn, .travel .travel__btn, .caractereArticle .tag {
+  margin-bottom: 2.5em;
+  display: inline-block;
+  border: 2px solid #1840d1;
+  border-radius: 4px;
+  transition: background-color 0.24s ease-out; }
+  .btn a, .who .who__btn a, .actions .actions__btn a, .goals .goals__btn a, .form .form__btn a, .form #label-submit a, .support .support__btn a, .envies .envies__btn a, .travel .travel__btn a, .caractereArticle .tag a, .btn p, .who .who__btn p, .actions .actions__btn p, .goals .goals__btn p, .form .form__btn p, .form #label-submit p, .support .support__btn p, .envies .envies__btn p, .travel .travel__btn p, .caractereArticle .tag p, .btn li, .who .who__btn li, .actions .actions__btn li, .goals .goals__btn li, .form .form__btn li, .form #label-submit li, .support .support__btn li, .envies .envies__btn li, .travel .travel__btn li, .caractereArticle .tag li {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0.6em 1em;
+    color: #1840d1;
+    font-size: 18px;
+    transition: color 0.24s ease-out;
+    cursor: pointer; }
+  .btn:hover, .who .who__btn:hover, .actions .actions__btn:hover, .goals .goals__btn:hover, .form .form__btn:hover, .form #label-submit:hover, .support .support__btn:hover, .envies .envies__btn:hover, .travel .travel__btn:hover, .caractereArticle .tag:hover, .btn:focus, .who .who__btn:focus, .actions .actions__btn:focus, .goals .goals__btn:focus, .form .form__btn:focus, .form #label-submit:focus, .support .support__btn:focus, .envies .envies__btn:focus, .travel .travel__btn:focus, .caractereArticle .tag:focus {
+    background-color: #1840d1; }
+    .btn:hover a, .who .who__btn:hover a, .actions .actions__btn:hover a, .goals .goals__btn:hover a, .form .form__btn:hover a, .form #label-submit:hover a, .support .support__btn:hover a, .envies .envies__btn:hover a, .travel .travel__btn:hover a, .caractereArticle .tag:hover a, .btn:focus a, .who .who__btn:focus a, .actions .actions__btn:focus a, .goals .goals__btn:focus a, .form .form__btn:focus a, .form #label-submit:focus a, .support .support__btn:focus a, .envies .envies__btn:focus a, .travel .travel__btn:focus a, .caractereArticle .tag:focus a {
+      color: #ffffff; }
+
+nav {
+  text-align: center;
+  padding: 20px 0; }
+  nav li {
+    margin-bottom: 2em;
+    display: block;
+    font-family: "osBold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    @media screen and (min-width: 600px) {
+      nav li {
+        margin-bottom: 0;
+        display: inline-block; } }
+    nav li a {
+      padding: 2em 0;
+      transition: color 0.24s; }
+      @media screen and (min-width: 600px) {
+        nav li a {
+          padding: 0 1.4em; } }
+      nav li a:hover, nav li a:focus {
+        color: #1840d1;
+        cursor: pointer; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+header {
+  position: relative;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (min-width: 600px) {
+    header {
+      background-image: url("img/landingBackground.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; } }
+  header .header__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1840d1;
+    transition: background-color 0.24s; }
+    @media screen and (min-width: 600px) {
+      header .header__background {
+        background-color: rgba(24, 64, 209, 0.4); } }
+  header .header__titles {
+    padding: 100px 0px;
+    position: relative;
+    z-index: 5; }
+  header h1 {
+    margin-bottom: -20px;
+    font-size: 100px;
+    font-family: "osBold", Helvetica, Arial, sans-serif; }
+    @media screen and (min-width: 600px) {
+      header h1 {
+        font-size: 150px;
+        letter-spacing: 0.1em; } }
+  header h2 {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 20px; }
+    @media screen and (min-width: 600px) {
+      header h2 {
+        font-size: 28px; } }
+  header.actions, header.programme, header.bio {
+    width: 100%;
+    text-align: center; }
+    header.actions .header__titles, header.programme .header__titles, header.bio .header__titles {
+      position: relative;
+      z-index: 5; }
+    header.actions h1, header.programme h1, header.bio h1 {
+      font-size: 36px;
+      margin-bottom: 0; }
+      @media screen and (min-width: 650px) {
+        header.actions h1, header.programme h1, header.bio h1 {
+          font-size: 42px;
+          letter-spacing: 0.1em; } }
+  header.actions {
+    background-image: url("img/actionsBackground.png"); }
+    header.actions .btn, header.actions .who .who__btn, .who header.actions .who__btn, header.actions .actions__btn, header.actions .goals .goals__btn, .goals header.actions .goals__btn, header.actions .form .form__btn, .form header.actions .form__btn, header.actions .form #label-submit, .form header.actions #label-submit, header.actions .support .support__btn, .support header.actions .support__btn, header.actions .envies .envies__btn, .envies header.actions .envies__btn, header.actions .travel .travel__btn, .travel header.actions .travel__btn, header.actions .caractereArticle .tag, .caractereArticle header.actions .tag {
+      border-color: #fff; }
+      header.actions .btn:hover, header.actions .who .who__btn:hover, .who header.actions .who__btn:hover, header.actions .actions__btn:hover, header.actions .goals .goals__btn:hover, .goals header.actions .goals__btn:hover, header.actions .form .form__btn:hover, .form header.actions .form__btn:hover, header.actions .form #label-submit:hover, .form header.actions #label-submit:hover, header.actions .support .support__btn:hover, .support header.actions .support__btn:hover, header.actions .envies .envies__btn:hover, .envies header.actions .envies__btn:hover, header.actions .travel .travel__btn:hover, .travel header.actions .travel__btn:hover, header.actions .caractereArticle .tag:hover, .caractereArticle header.actions .tag:hover, header.actions .btn:focus, header.actions .who .who__btn:focus, .who header.actions .who__btn:focus, header.actions .actions__btn:focus, header.actions .goals .goals__btn:focus, .goals header.actions .goals__btn:focus, header.actions .form .form__btn:focus, .form header.actions .form__btn:focus, header.actions .form #label-submit:focus, .form header.actions #label-submit:focus, header.actions .support .support__btn:focus, .support header.actions .support__btn:focus, header.actions .envies .envies__btn:focus, .envies header.actions .envies__btn:focus, header.actions .travel .travel__btn:focus, .travel header.actions .travel__btn:focus, header.actions .caractereArticle .tag:focus, .caractereArticle header.actions .tag:focus {
+        background-color: #fff; }
+        header.actions .btn:hover a, header.actions .who .who__btn:hover a, .who header.actions .who__btn:hover a, header.actions .actions__btn:hover a, header.actions .goals .goals__btn:hover a, .goals header.actions .goals__btn:hover a, header.actions .form .form__btn:hover a, .form header.actions .form__btn:hover a, header.actions .form #label-submit:hover a, .form header.actions #label-submit:hover a, header.actions .support .support__btn:hover a, .support header.actions .support__btn:hover a, header.actions .envies .envies__btn:hover a, .envies header.actions .envies__btn:hover a, header.actions .travel .travel__btn:hover a, .travel header.actions .travel__btn:hover a, header.actions .caractereArticle .tag:hover a, .caractereArticle header.actions .tag:hover a, header.actions .btn:focus a, header.actions .who .who__btn:focus a, .who header.actions .who__btn:focus a, header.actions .actions__btn:focus a, header.actions .goals .goals__btn:focus a, .goals header.actions .goals__btn:focus a, header.actions .form .form__btn:focus a, .form header.actions .form__btn:focus a, header.actions .form #label-submit:focus a, .form header.actions #label-submit:focus a, header.actions .support .support__btn:focus a, .support header.actions .support__btn:focus a, header.actions .envies .envies__btn:focus a, .envies header.actions .envies__btn:focus a, header.actions .travel .travel__btn:focus a, .travel header.actions .travel__btn:focus a, header.actions .caractereArticle .tag:focus a, .caractereArticle header.actions .tag:focus a {
+          color: #1840d1; }
+      header.actions .btn a, header.actions .who .who__btn a, .who header.actions .who__btn a, header.actions .actions__btn a, header.actions .goals .goals__btn a, .goals header.actions .goals__btn a, header.actions .form .form__btn a, .form header.actions .form__btn a, header.actions .form #label-submit a, .form header.actions #label-submit a, header.actions .support .support__btn a, .support header.actions .support__btn a, header.actions .envies .envies__btn a, .envies header.actions .envies__btn a, header.actions .travel .travel__btn a, .travel header.actions .travel__btn a, header.actions .caractereArticle .tag a, .caractereArticle header.actions .tag a {
+        color: #fff; }
+  header.programme {
+    background-image: url("img/programmeBackground.png"); }
+  header.bio {
+    background-image: url("img/bioBackground.png"); }
+
+section {
+  margin-bottom: 50px;
+  overflow-x: hidden; }
+
+.who {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .who:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .who {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; }
+      .who:last-child {
+        margin-right: 0; } }
+  .who .who__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.actions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .actions:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .actions {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-align: right; }
+      .actions:last-child {
+        margin-right: 0; } }
+  .actions .actions__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.goals {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .goals:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .goals {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .goals:last-child {
+        margin-right: 0; } }
+  .goals .goals__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.programm {
+  margin: 0 auto;
+  margin-bottom: 42px; }
+  @media screen and (min-width: 1080px) {
+    .programm {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .programm:last-child {
+        margin-right: 0; } }
+  .programm .programm__item {
+    display: inline-block;
+    margin: 0;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    background-color: #1840d1;
+    border: 2px solid #ffffff; }
+    @media screen and (min-width: 1080px) {
+      .programm .programm__item {
+        width: 33%; } }
+    .programm .programm__item p, .programm .programm__item li {
+      margin-top: 75px;
+      color: #ffffff;
+      font-family: "osBold", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .programm .programm__item p:last-child, .programm .programm__item li:last-child {
+        margin-right: 0; }
+
+.form {
+  margin-bottom: 42px;
+  text-align: center; }
+  .form .form__title {
+    margin-bottom: 1.4em;
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  .form fieldset {
+    border: none; }
+  .form .formMail__label, .form .formMessage__label {
+    display: block;
+    margin-bottom: 0.6em;
+    font-family: "osRegular", Helvetica, Arial, sans-serif;
+    font-size: 22px; }
+  .form .formMail__input, .form .formMessage__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    width: 80%;
+    padding: 0.6em 1em;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    outline: none; }
+    @media screen and (min-width: 1080px) {
+      .form .formMail__input, .form .formMessage__input {
+        width: 600px; } }
+  .form .formMessage__input {
+    resize: vertical; }
+  .form .form__btn, .form #label-submit {
+    background-color: #1840d1 !important; }
+    .form .form__btn a, .form #label-submit a {
+      color: #ffffff !important; }
+
+.processus {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .processus:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .processus {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; }
+      .processus:last-child {
+        margin-right: 0; } }
+  .processus .processus__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.support {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .support:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .support {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-align: right; }
+      .support:last-child {
+        margin-right: 0; } }
+  .support .support__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.region {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .region:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .region:last-child {
+        margin-right: 0; } }
+  .region .region__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.events {
+  clear: both;
+  margin-bottom: 42px; }
+
+.article {
+  margin-bottom: 30px;
+  clear: both;
+  background-color: #efefef; }
+  .article .article__img {
+    height: 250px;
+    background-color: #303030;
+    overflow: hidden; }
+    @media screen and (min-width: 1080px) {
+      .article .article__img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .article .article__img:last-child {
+          margin-right: 0; } }
+    .article .article__img img {
+      width: 100%; }
+  .article .article__infos {
+    padding: 15px;
+    text-align: right; }
+    @media screen and (min-width: 1080px) {
+      .article .article__infos {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .article .article__infos:last-child {
+          margin-right: 0; } }
+  .article .article__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+  .article .social a {
+    padding: 0 10px; }
+
+.nextEvents {
+  margin: 0 42px;
+  text-align: center;
+  clear: both; }
+
+.nextEvent {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 1080px) {
+    .nextEvent {
+      display: inline-block;
+      padding: 10px;
+      width: 15%;
+      text-align: center;
+      border: 1px solid #333333; } }
+  .nextEvent p.nextEvent__date, .nextEvent li.nextEvent__date {
+    font-family: "osBold", Helvetica, Arial, sans-serif; }
+
+.usine {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .usine:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .usine {
+      padding-right: 10px;
+      border-right: 2px solid #cfcfcf; } }
+  .usine .usine__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+
+.envies {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px;
+  text-align: center; }
+  .envies:last-child {
+    margin-right: 0; }
+  .envies .envies__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  .envies .envies__txt {
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .envies .envies__txt {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px; } }
+
+.travel {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 42px; }
+  .travel:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .travel {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      text-align: center; }
+      .travel:last-child {
+        margin-right: 0; } }
+  .travel .travel__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+  .travel .travel__txt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .travel .travel__txt {
+        width: 400px; } }
+
+.programmeArticle {
+  padding: 30px 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative; }
+  .programmeArticle:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 1080px) {
+    .programmeArticle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .programmeArticle:last-child {
+        margin-right: 0; } }
+  .programmeArticle .title__container {
+    position: relative; }
+  .programmeArticle .programmeArticle__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .programmeArticle .programmeArticle__title {
+        text-align: left; } }
+  .programmeArticle .number {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: rgba(24, 64, 209, 0.3);
+    font-family: "osBold", Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    transform: translate(-50%, -30%); }
+    @media screen and (min-width: 1080px) {
+      .programmeArticle .number {
+        left: -5px;
+        font-size: 150px; } }
+  .programmeArticle .programmeArticle__txt {
+    margin-bottom: 2em; }
+  .programmeArticle:nth-child(even) {
+    padding: 30px 0 80px 0;
+    background-color: #ececec; }
+    @media screen and (min-width: 1080px) {
+      .programmeArticle:nth-child(even) .number {
+        left: calc(100% - 5px); }
+      .programmeArticle:nth-child(even) .programmeArticle__title {
+        text-align: right; }
+      .programmeArticle:nth-child(even) .programmeArticle__txt {
+        text-align: right; } }
+    .programmeArticle:nth-child(even)::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      z-index: -5;
+      left: -100px;
+      right: -100px;
+      height: 300px;
+      background-color: #ececec;
+      transform-origin: 50% 0%;
+      transform: rotate(-5deg); }
+
+.caractereArticle {
+  margin-bottom: 42px;
+  clear: both; }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle {
+      text-align: right; } }
+  .caractereArticle .caractereArticle__img {
+    background-color: #333333;
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .caractereArticle .caractereArticle__img img {
+      width: 100%; }
+    @media screen and (min-width: 1080px) {
+      .caractereArticle .caractereArticle__img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .caractereArticle .caractereArticle__img:last-child {
+          margin-right: 0; } }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle .caractereArticle__infos {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .caractereArticle .caractereArticle__infos:last-child {
+        margin-right: 0; } }
+  .caractereArticle .caractereArticle__title {
+    font-family: "osLight", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (min-width: 1080px) {
+      .caractereArticle .caractereArticle__title {
+        text-align: right; } }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle .caractereArticle__txt {
+      text-align: right; } }
+  .caractereArticle .tag {
+    cursor: default; }
+    .caractereArticle .tag:first-of-type {
+      margin-right: 15px; }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle:nth-child(even) {
+      text-align: left; } }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle:nth-child(even) .caractereArticle__img {
+      margin-right: -10px;
+      float: right; } }
+  @media screen and (min-width: 1080px) {
+    .caractereArticle:nth-child(even) .caractereArticle__title, .caractereArticle:nth-child(even) .caractereArticle__txt {
+      text-align: left; } }
+
+footer .social, footer .legal {
+  text-align: center; }
+footer .social__facebook, footer .social__twitter {
+  display: inline-block !important;
+  padding: 0px 20px; }
+
+/*# sourceMappingURL=app.css.map */
