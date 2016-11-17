@@ -5,11 +5,11 @@
 ?>
 <?php get_header(); //appel du template header.php  ?>
 <!--Hero section-->
-<header class="actions">
+<header class="actions" style="background-image: url('<?= the_post_thumbnail_url('') ?>')">
     <div class="header__background"></div>
     <div class="container">
         <div class="header__titles">
-            <h1>    <?php the_field('hero_baseline'); ?></h1>
+            <h1><?php the_field('hero_baseline'); ?></h1>
             <h2><?php the_field('hero_baseline2'); ?></h2>
             <div class="btn"><a
                     href="<?php the_field('hero_button_link'); ?>"><?php the_field('button_hero_text'); ?></a></div>

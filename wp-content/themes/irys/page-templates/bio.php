@@ -7,7 +7,7 @@
 <?php get_header(); //appel du template header.php  ?>
 
 
-    <header class="programme">
+    <header class="programme" style="background-image: url('<?= the_post_thumbnail_url('') ?>')">
       <div class="header__background"></div>
       <div class="container">
         <div class="header__titles">
@@ -38,7 +38,9 @@
                     <article class="caractereArticle">
                         <div class="container">
 
-                            <div class="caractereArticle__img" style="background-image: url('<?= the_post_thumbnail_url('thumbnail_bio') ?>')"></div>
+                            <div class="caractereArticle__img">
+                                <img src="<?= the_post_thumbnail_url('thumbnail_bio') ?>">
+                            </div>
                             <div class="caractereArticle__infos">
                                 <h3 class="caractereArticle__title"><?php the_title(); ?></h3>
                                 <p class="caractereArticle__txt"><?php the_content(); ?></p>

@@ -7,7 +7,7 @@ Template Name: programme
 get_header(); //appel du template header.php  ?>
 
 
-    <header class="programme">
+    <header class="programme" style="background-image: url('<?= the_post_thumbnail_url('') ?>')">
       <div class="header__background"></div>
       <div class="container">
         <div class="header__titles">
