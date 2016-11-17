@@ -89,14 +89,16 @@
             <article class="envies">
                 <h3 class="envies__title"><?php the_field('lien_titre'); ?></h3>
                 <p class="envies__txt"><?php the_field('lien_description'); ?></p>
-                <a class="envies__btn"
-                   href="<?php the_field('lien_bouton_url'); ?>"><?php the_field('lien_bouton'); ?></a>
+                <div class="envies__btn">
+                    <a href="<?php the_field('lien_bouton_url'); ?>"><?php the_field('lien_bouton'); ?></a>
+                </div>
             </article>
             <article class="travel">
                 <h4 class="travel__title"><?php the_field('lien_titre_2'); ?></h4>
                 <p class="travel__txt"><?php the_field('lien_description_2'); ?></p>
-                <a class="travel__btn"
-                   href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
+                <div class="travel__btn">
+                    <a href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
+                </div>
             </article>
         </article>
     </div>
