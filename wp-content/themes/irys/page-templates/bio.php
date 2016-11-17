@@ -50,7 +50,7 @@
                                 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):
                                     foreach ( $terms as $term ):
                                 ?>
-                                    <div class="tag"><a><?= $term->name ?></a></div>
+                                    <div class="tag"><a style="cursor: default;">#<?= $term->name ?></a></div>
                                 <?php
                                     endforeach;
                                 endif;

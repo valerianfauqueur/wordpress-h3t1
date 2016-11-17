@@ -12,11 +12,18 @@ get_header(); //appel du template header.php  ?>
       <div class="container">
         <div class="header__titles">
             <h1><?php the_title(); ?></h1>
-            <h3><?php the_field("sous_titre"); ?></h3>
-            <p><?php the_field("description"); ?></p>
         </div>
       </div>
     </header>
+
+    <section>
+      <div class="container">
+        <h2><?php the_field("sous_titre"); ?></h2>
+        <p class="intro"><?php the_field("description"); ?></p>
+      </div>
+    </section>
+
+
     <section>
 
         <?php
