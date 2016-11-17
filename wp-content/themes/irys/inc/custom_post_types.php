@@ -156,3 +156,5 @@ function agenda(){
     register_post_type('agenda', $args );
 
 }
+
+

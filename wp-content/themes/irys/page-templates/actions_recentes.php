@@ -23,7 +23,7 @@
             <h3 class="region__title"><?php the_field('hero_description_titre'); ?></h3>
             <p class="region__txt"><?php the_field('hero_description'); ?></p>
         </section>
-    
+
         <div class="events">
             <?php
             // The Query
@@ -62,43 +62,24 @@
         </div>
 
         <article class="nextEvents">
-            <?php
-            // The Query
-            $args = array('post_type' => "agenda");
-            $the_query = new WP_Query($args);
-            // The Loop
-            if ($the_query->have_posts()) {
-                while ($the_query->have_posts()) {
-                    $the_query->the_post();
-                    ?>
-                    <article class="nextEvent">
-                        <p class="nextEvent__date"><?php the_title() ?></p>
-                        <p class="nextEvent__txt"><?php the_field('agenda_texte') ?></p>
-                    </article>
-                    <?php
-                }
-                /* Restore original Post Data */
-                wp_reset_postdata();
-            } else {
-                // no posts found
-            }
-            ?>
-
-
-            <!--lien section-->
-            <article class="envies">
-                <h3 class="envies__title"><?php the_field('lien_titre'); ?></h3>
-                <p class="envies__txt"><?php the_field('lien_description'); ?></p>
-                <a class="envies__btn"
-                   href="<?php the_field('lien_bouton_url'); ?>"><?php the_field('lien_bouton'); ?></a>
-            </article>
-            <article class="travel">
-                <h4 class="travel__title"><?php the_field('lien_titre_2'); ?></h4>
-                <p class="travel__txt"><?php the_field('lien_description_2'); ?></p>
-                <a class="travel__btn"
-                   href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
-            </article>
+            <div class="btn"><p>Plus de dates</p></div>
+            <div class="content"></div>
         </article>
+
+        <!--lien section-->
+        <article class="envies">
+            <h3 class="envies__title"><?php the_field('lien_titre'); ?></h3>
+            <p class="envies__txt"><?php the_field('lien_description'); ?></p>
+            <a class="envies__btn"
+               href="<?php the_field('lien_bouton_url'); ?>"><?php the_field('lien_bouton'); ?></a>
+        </article>
+        <article class="travel">
+            <h4 class="travel__title"><?php the_field('lien_titre_2'); ?></h4>
+            <p class="travel__txt"><?php the_field('lien_description_2'); ?></p>
+            <a class="travel__btn"
+               href="<?php the_field('lien_bouton_url_2'); ?>"><?php the_field('lien_bouton_2'); ?></a>
+        </article>
+
     </div>
 
 </main>
