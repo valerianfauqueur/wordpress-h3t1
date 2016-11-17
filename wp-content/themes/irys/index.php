@@ -37,24 +37,29 @@
                             href="<?php the_field('bouton_url_3'); ?>"><?php the_field("bouton_texte_3"); ?></a></div>
                 </article>
                 <article class="programm">
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
-                    <div class="programm__item">
-                        <p><a>icon</a></p>
-                    </div>
+
+                    <?php
+                    // The Query
+                    $args = array('post_type' => "programme");
+                    $the_query = new WP_Query($args);
+                    // The Loop
+                    if ($the_query->have_posts()) {
+                        while ($the_query->have_posts()) {
+                            $the_query->the_post();
+                            $id = 9;
+                            ?>
+                            <div class="programm__item">
+                                <p><a href="<?php get_page_link($id)?>programme#<?php the_title(); ?>"><?= the_title(); ?></a></p>
+                            </div>
+
+                            <?php
+                        }
+                        /* Restore original Post Data */
+                        wp_reset_postdata();
+                    } else {
+                        // no posts found
+                    }
+                    ?>
                 </article>
             </div>
         </section>
