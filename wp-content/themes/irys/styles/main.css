@@ -297,10 +297,11 @@ section {
   font-size: 30px;
   text-align: center; }
 .form fieldset {
-  border: none; }
+  border: none;
+  margin-bottom: 20px;}
 .form .formMail__label, .form .formMessage__label {
   display: block;
-  margin-bottom: 0.6em;
+  margin-bottom: -0.6em;
   font-family: "osRegular", Helvetica, Arial, sans-serif;
   font-size: 22px; }
 .form .formMail__input, .form .formMessage__input {
@@ -320,9 +321,21 @@ section {
 .form .formMessage__input {
   resize: vertical; }
 .form .form__btn, .form #label-submit {
-  background-color: #1840d1; }
-.form .form__btn a, .form #label-submit a {
-  color: #ffffff; }
+  background-color: #1840d1;
+  color: #ffffff;
+  border: 2px solid $brandPrimary;
+  border-radius: 4px;
+  padding: 0.6em 1em;
+  transition: background-color 0.320s ease-out, color 0.320s ease-out;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form .form__btn, .form #label-submit:hover, .form .form__btn, .form #label-submit:focus {
+  color: #1840d1;
+  background-color: #ffffff;
+}
+
 
 .processus {
   float: left;
